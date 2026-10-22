@@ -1,1041 +1,1170 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>劉恒淯 Vincent | 個人可愛極簡履歷</title>
-  <meta name="description" content="劉恒淯 (Vincent) 的個人自我介紹與履歷網頁。簡約可愛純白風格，熱愛排球打球、玩遊戲與 1000 片拼圖挑戰！">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>劉恒淯 Vincent | 個人可愛極簡履歷</title>
+<meta name="description" content="劉恒淯 (Vincent) 的個人自我介紹與履歷網頁。純白簡約可愛風格，熱愛排球打球、玩遊戲與 1000 片拼圖挑戰！">
 
-  <!-- Google Fonts: 圓潤可愛與現代字體 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Google Fonts: 圓潤可愛與現代繁中字體 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800;900&display=swap"
+  rel="stylesheet">
 
-  <style>
-    /* ==========================================================
-       設計系統：純白・簡約・可愛・柔和 (Minimal Cute White)
+<style>
+  /* ==========================================================
+       設計系統：純白・簡約・可愛柔和 (Cute Minimal White Design)
        ========================================================== */
-    :root {
-      /* 白色主色調與柔和奶白背景 */
-      --bg-body: #fcfcfd;
-      --bg-pure-white: #ffffff;
-      --bg-subtle: #f8fafc;
-      --bg-card: #ffffff;
-      --bg-card-soft: #fbfbfe;
+  :root {
+    /* 白色主色調層次 */
+    --bg-body: #fcfcfd;
+    --bg-white: #ffffff;
+    --bg-soft: #f8fafc;
+    --bg-pill: #f1f5f9;
 
-      /* 可愛柔和點綴色 */
-      --accent-coral: #ff758f;        /* 活潑蜜桃粉 */
-      --accent-sky: #38bdf8;          /* 晴空粉藍（代表排球活力） */
-      --accent-lemon: #fbbf24;        /* 溫暖鵝黃 */
-      --accent-mint: #34d399;         /* 薄荷綠 */
-      --accent-purple: #a78bfa;       /* 柔紫 */
-      --accent-gradient: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-      --volleyball-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
-      
-      /* 文字色階（親和且清晰） */
-      --text-title: #1e293b;
-      --text-body: #475569;
-      --text-muted: #94a3b8;
-      --text-soft: #64748b;
+    /* 柔和可愛馬卡龍點綴色 (以白色為主，粉嫩跳色為輔) */
+    --pastel-pink: #ff758f;
+    --pastel-pink-soft: #fff0f3;
+    --pastel-blue: #38bdf8;
+    --pastel-blue-soft: #f0f9ff;
+    --pastel-yellow: #fbbf24;
+    --pastel-yellow-soft: #fefce8;
+    --pastel-green: #34d399;
+    --pastel-green-soft: #f0fdf4;
+    --pastel-purple: #a78bfa;
+    --pastel-purple-soft: #faf5ff;
 
-      /* 柔和圓角與邊框陰影 */
-      --border-color: #f1f5f9;
-      --border-cute: #e2e8f0;
-      --radius-sm: 12px;
-      --radius-md: 20px;
-      --radius-lg: 28px;
-      --radius-pill: 9999px;
+    /* 文字色彩 (溫暖柔和深灰，不刺眼) */
+    --text-main: #1e293b;
+    --text-sub: #475569;
+    --text-muted: #94a3b8;
 
-      /* 雲朵般輕柔的陰影 */
-      --shadow-cute: 0 10px 30px -5px rgba(148, 163, 184, 0.12), 0 4px 12px -2px rgba(148, 163, 184, 0.06);
-      --shadow-hover: 0 20px 40px -8px rgba(255, 117, 143, 0.18), 0 8px 18px -4px rgba(56, 189, 248, 0.12);
-      --shadow-pill: 0 4px 14px rgba(0, 0, 0, 0.04);
+    /* 邊框與圓角 */
+    --border-color: #f1f5f9;
+    --border-cute: #e2e8f0;
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
+    --radius-pill: 9999px;
 
-      --transition-cute: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
+    /* 棉花糖純白柔和陰影 */
+    --shadow-cute: 0 10px 30px -5px rgba(148, 163, 184, 0.12), 0 4px 10px -2px rgba(148, 163, 184, 0.05);
+    --shadow-hover: 0 18px 36px -6px rgba(255, 117, 143, 0.16), 0 8px 18px -4px rgba(56, 189, 248, 0.12);
+    --shadow-pill: 0 4px 14px rgba(0, 0, 0, 0.04);
 
-    /* ==========================================================
+    /* 彈性微動畫 */
+    --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* ==========================================================
        基礎重置與背景裝飾
        ========================================================== */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Nunito', 'M PLUS Rounded 1c', 'Noto Sans TC', -apple-system, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-sub);
+    line-height: 1.75;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* 可愛微光雲朵斑點（純白底上的輕柔柔焦） */
+  .cute-bg-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .cute-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.55;
+    animation: floatSlow 15s infinite alternate ease-in-out;
+  }
+
+  .blob-1 {
+    top: -60px;
+    right: -60px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, #fde2e4 0%, transparent 70%);
+  }
+
+  .blob-2 {
+    bottom: 10%;
+    left: -100px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, #e0f2fe 0%, transparent 70%);
+    animation-delay: -5s;
+  }
+
+  .blob-3 {
+    top: 48%;
+    right: 5%;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, #fef3c7 0%, transparent 70%);
+    opacity: 0.45;
+    animation-delay: -9s;
+  }
+
+  @keyframes floatSlow {
+    0% {
+      transform: translateY(0) scale(1) rotate(0deg);
     }
 
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
+    100% {
+      transform: translateY(35px) scale(1.08) rotate(10deg);
     }
+  }
 
-    body {
-      font-family: 'Nunito', 'M PLUS Rounded 1c', 'Noto Sans TC', sans-serif;
-      background-color: var(--bg-body);
-      color: var(--text-body);
-      line-height: 1.75;
-      overflow-x: hidden;
-      position: relative;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-    /* 可愛白色背景紋理（柔和微光與圓形雲朵斑點） */
-    .cute-bg-elements {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
-      overflow: hidden;
-    }
+  .container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
 
-    .cute-blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.55;
-      animation: floatSlow 14s infinite alternate ease-in-out;
-    }
+  .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
 
-    .blob-1 {
-      top: -60px;
-      right: -80px;
-      width: 420px;
-      height: 420px;
-      background: radial-gradient(circle, #fde2e4 0%, transparent 70%);
-    }
+  .cute-pill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 1.1rem;
+    background: var(--bg-white);
+    border: 1.5px solid var(--border-cute);
+    border-radius: var(--radius-pill);
+    font-size: 0.86rem;
+    font-weight: 800;
+    color: var(--pastel-pink);
+    box-shadow: var(--shadow-pill);
+    margin-bottom: 0.85rem;
+    letter-spacing: 0.05em;
+  }
 
-    .blob-2 {
-      bottom: 10%;
-      left: -100px;
-      width: 450px;
-      height: 450px;
-      background: radial-gradient(circle, #e0f2fe 0%, transparent 70%);
-      animation-delay: -5s;
-    }
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--text-main);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.6rem;
+  }
 
-    .blob-3 {
-      top: 45%;
-      right: 10%;
-      width: 320px;
-      height: 320px;
-      background: radial-gradient(circle, #fef3c7 0%, transparent 70%);
-      animation-delay: -9s;
-    }
+  .section-title span.pink {
+    color: var(--pastel-pink);
+    position: relative;
+    display: inline-block;
+  }
 
-    @keyframes floatSlow {
-      0% { transform: translateY(0) scale(1) rotate(0deg); }
-      100% { transform: translateY(35px) scale(1.08) rotate(10deg); }
-    }
+  .section-title span.pink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    height: 10px;
+    background: #fed7aa;
+    border-radius: 6px;
+    opacity: 0.45;
+    z-index: -1;
+  }
 
-    /* ==========================================================
-       排版與通用樣式
+  .section-subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  /* ==========================================================
+       純白可愛懸浮導覽列 (Floating Pill Navbar)
        ========================================================== */
-    .container {
-      width: 100%;
-      max-width: 1020px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      position: relative;
-      z-index: 1;
+  .navbar {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.25rem;
+  }
+
+  .nav-inner {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(226, 232, 240, 0.85);
+    border-radius: var(--radius-pill);
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 10px 25px -4px rgba(148, 163, 184, 0.15);
+    transition: var(--transition-bounce);
+  }
+
+  .nav-inner:hover {
+    box-shadow: 0 14px 30px -4px rgba(148, 163, 184, 0.22);
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 900;
+    font-size: 1.15rem;
+    color: var(--text-main);
+  }
+
+  .brand-emoji {
+    display: inline-block;
+    animation: wiggle 2.5s infinite ease-in-out;
+    transform-origin: 70% 70%;
+  }
+
+  @keyframes wiggle {
+
+    0%,
+    100% {
+      transform: rotate(0deg);
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    20% {
+      transform: rotate(14deg);
     }
 
-    .section-header {
-      text-align: center;
-      margin-bottom: 3.5rem;
+    40% {
+      transform: rotate(-8deg);
     }
 
-    .cute-pill-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.4rem 1.1rem;
-      background: var(--bg-pure-white);
-      border: 1.5px solid var(--border-cute);
-      border-radius: var(--radius-pill);
-      font-size: 0.85rem;
-      font-weight: 800;
-      color: var(--accent-coral);
-      box-shadow: var(--shadow-pill);
-      margin-bottom: 0.85rem;
-      letter-spacing: 0.05em;
+    60% {
+      transform: rotate(10deg);
     }
 
-    .section-title {
-      font-size: 2.2rem;
-      font-weight: 900;
-      color: var(--text-title);
-      letter-spacing: -0.01em;
-      margin-bottom: 0.5rem;
+    80% {
+      transform: rotate(-4deg);
     }
+  }
 
-    .section-subtitle {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+  }
 
-    /* ==========================================================
-       可愛純白導覽列 Navigation Bar
+  .nav-link {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--text-sub);
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-bounce);
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--pastel-pink);
+    background: var(--pastel-pink-soft);
+  }
+
+  .nav-cta-btn {
+    padding: 0.48rem 1.2rem;
+    background: #ff758f;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.88rem;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 4px 12px rgba(255, 117, 143, 0.35);
+    transition: var(--transition-bounce);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .nav-cta-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 117, 143, 0.45);
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.45rem;
+    cursor: pointer;
+    color: var(--text-main);
+  }
+
+  /* ==========================================================
+       HERO 主視覺區 (純白簡約可愛)
        ========================================================== */
-    .navbar {
-      position: fixed;
-      top: 1rem;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      padding: 0 1.25rem;
-    }
-
-    .nav-inner {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1.5px solid rgba(226, 232, 240, 0.8);
-      border-radius: var(--radius-pill);
-      padding: 0.6rem 1.4rem;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      box-shadow: 0 10px 25px -4px rgba(148, 163, 184, 0.15);
-      transition: var(--transition-cute);
-    }
-
-    .nav-inner:hover {
-      box-shadow: 0 14px 30px -4px rgba(148, 163, 184, 0.22);
-    }
-
-    .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-weight: 900;
-      font-size: 1.15rem;
-      color: var(--text-title);
-    }
-
-    .brand-emoji {
-      display: inline-block;
-      animation: wiggle 2.5s infinite ease-in-out;
-      transform-origin: 70% 70%;
-    }
-
-    @keyframes wiggle {
-      0%, 100% { transform: rotate(0deg); }
-      20% { transform: rotate(14deg); }
-      40% { transform: rotate(-8deg); }
-      60% { transform: rotate(10deg); }
-      80% { transform: rotate(-4deg); }
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.4rem;
-      list-style: none;
-    }
-
-    .nav-link {
-      font-weight: 700;
-      font-size: 0.92rem;
-      color: var(--text-soft);
-      padding: 0.35rem 0.75rem;
-      border-radius: var(--radius-pill);
-      transition: var(--transition-cute);
-    }
-
-    .nav-link:hover, .nav-link.active {
-      color: var(--accent-coral);
-      background: #fff1f2;
-    }
-
-    .nav-cta-btn {
-      padding: 0.45rem 1.1rem;
-      background: #ff758f;
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 0.88rem;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 4px 12px rgba(255, 117, 143, 0.3);
-      transition: var(--transition-cute);
-    }
-
-    .nav-cta-btn:hover {
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 6px 16px rgba(255, 117, 143, 0.45);
-    }
-
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.4rem;
-      cursor: pointer;
-      color: var(--text-title);
-    }
-
-    /* ==========================================================
-       HERO 區塊：可愛溫暖白視覺
-       ========================================================== */
-    .hero {
-      padding: 9.5rem 0 5rem;
-      min-height: 88vh;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-layout {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
-      gap: 3.5rem;
-    }
-
-    .hero-cute-greeting {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 1rem;
-      background: #fff;
-      border: 1.5px solid #fecdd3;
-      border-radius: var(--radius-pill);
-      color: #e11d48;
-      font-size: 0.9rem;
-      font-weight: 800;
-      box-shadow: var(--shadow-pill);
-      margin-bottom: 1.25rem;
-    }
-
-    .hero-main-title {
-      font-size: 3.4rem;
-      font-weight: 900;
-      color: var(--text-title);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .hero-name-highlight {
-      position: relative;
-      color: #ff5c8a;
-      display: inline-block;
-    }
-
-    .hero-name-highlight::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 6px;
-      width: 100%;
-      height: 12px;
-      background: #fed7aa;
-      border-radius: 6px;
-      opacity: 0.4;
-      z-index: -1;
-    }
-
-    /* 「哈哈哈」亮眼簡約引言框 */
-    .hero-laugh-bubble {
-      background: #ffffff;
-      border: 2px dashed #fcd34d;
-      border-radius: var(--radius-md);
-      padding: 1.25rem 1.5rem;
-      margin: 1.4rem 0 1.8rem;
-      box-shadow: var(--shadow-cute);
-      position: relative;
-      transition: var(--transition-cute);
-    }
-
-    .hero-laugh-bubble:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .laugh-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 1.6rem;
-      font-weight: 900;
-      color: #f59e0b;
-      margin-bottom: 0.25rem;
-    }
-
-    .laugh-subtext {
-      color: var(--text-body);
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .hero-bio {
-      font-size: 1.08rem;
-      color: var(--text-soft);
-      margin-bottom: 2rem;
-      line-height: 1.8;
-    }
-
-    .hero-action-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .btn-cute-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.85rem 1.85rem;
-      background: #ff758f;
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 1rem;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 6px 18px rgba(255, 117, 143, 0.35);
-      transition: var(--transition-cute);
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-cute-primary:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 10px 24px rgba(255, 117, 143, 0.45);
-    }
-
-    .btn-cute-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.85rem 1.85rem;
-      background: #ffffff;
-      color: var(--text-title);
-      font-weight: 800;
-      font-size: 1rem;
-      border-radius: var(--radius-pill);
-      border: 1.5px solid var(--border-cute);
-      box-shadow: var(--shadow-pill);
-      transition: var(--transition-cute);
-    }
-
-    .btn-cute-secondary:hover {
-      background: #f8fafc;
-      transform: translateY(-4px);
-      border-color: #cbd5e1;
-    }
-
-    /* 可愛卡片視覺與大頭貼 */
-    .hero-avatar-showcase {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-
-    .cute-profile-card {
-      background: #ffffff;
-      border: 2px solid #f1f5f9;
-      border-radius: var(--radius-lg);
-      padding: 2.4rem 2rem 2rem;
-      text-align: center;
-      box-shadow: var(--shadow-cute);
-      width: 100%;
-      max-width: 330px;
-      position: relative;
-      transition: var(--transition-cute);
-    }
-
-    .cute-profile-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-hover);
-      border-color: #fbcfe8;
-    }
-
-    .cute-avatar-frame {
-      width: 130px;
-      height: 130px;
-      margin: 0 auto 1.4rem;
-      background: linear-gradient(135deg, #fef08a 0%, #fed7aa 50%, #fecdd3 100%);
-      border-radius: 50%;
-      padding: 6px;
-      box-shadow: 0 8px 24px rgba(254, 205, 211, 0.6);
-      position: relative;
-    }
-
-    .avatar-inner-face {
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3.5rem;
-      user-select: none;
-    }
-
-    .avatar-floating-tag {
-      position: absolute;
-      bottom: -6px;
-      right: 0px;
-      background: #38bdf8;
-      color: #fff;
-      font-size: 0.78rem;
-      font-weight: 800;
-      padding: 0.25rem 0.65rem;
-      border-radius: var(--radius-pill);
-      border: 2px solid #fff;
-    }
-
-    .cute-card-name {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: var(--text-title);
-      margin-bottom: 0.2rem;
-    }
-
-    .cute-card-sub {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 1.25rem;
-    }
-
-    .cute-quick-badges {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .quick-tag {
-      padding: 0.3rem 0.75rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.8rem;
-      font-weight: 700;
-      background: #f1f5f9;
-      color: var(--text-soft);
-    }
-
-    .quick-tag.pink { background: #ffe4e6; color: #e11d48; }
-    .quick-tag.blue { background: #e0f2fe; color: #0284c7; }
-
-    .cute-stats-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-      padding-top: 1.2rem;
-      border-top: 1.5px dashed #f1f5f9;
-    }
-
-    .stat-number-cute {
-      font-size: 1.35rem;
-      font-weight: 900;
-      color: var(--text-title);
-    }
-
-    .stat-label-cute {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    /* 浮動可愛裝飾標籤 */
-    .float-sticker {
-      position: absolute;
-      background: #ffffff;
-      border: 1.5px solid #f1f5f9;
-      border-radius: var(--radius-pill);
-      padding: 0.5rem 0.95rem;
-      box-shadow: var(--shadow-cute);
-      font-size: 0.85rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      animation: stickerBob 4s infinite ease-in-out;
-      z-index: 2;
-    }
-
-    .sticker-top {
-      top: -15px;
-      left: -20px;
-      color: #0284c7;
-      animation-delay: 0s;
-    }
-
-    .sticker-bottom {
-      bottom: -15px;
-      right: -20px;
-      color: #d97706;
-      animation-delay: 2s;
-    }
-
-    @keyframes stickerBob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    /* ==========================================================
-       關於我 & 1000 片拼圖經歷（卡片式 Bento Grid）
-       ========================================================== */
-    .section-about {
-      padding: 5.5rem 0;
-    }
-
-    .about-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 1.6rem;
-    }
-
-    .cute-box {
-      background: var(--bg-card);
-      border: 1.5px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.2rem;
-      box-shadow: var(--shadow-cute);
-      transition: var(--transition-cute);
-      position: relative;
-    }
-
-    .cute-box:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-      border-color: #fbcfe8;
-    }
-
-    .box-icon-bubble {
-      width: 52px;
-      height: 52px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .bubble-yellow { background: #fef3c7; }
-    .bubble-pink { background: #ffe4e6; }
-    .bubble-blue { background: #e0f2fe; }
-    .bubble-green { background: #dcfce7; }
-
-    .box-title {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--text-title);
-      margin-bottom: 0.65rem;
-    }
-
-    .box-desc {
-      color: var(--text-body);
-      font-size: 0.98rem;
-      line-height: 1.75;
-    }
-
-    /* 1000片拼圖特別大卡 */
-    .col-7 { grid-column: span 7; }
-    .col-5 { grid-column: span 5; }
-    .col-4 { grid-column: span 4; }
-
-    .puzzle-cute-meter {
-      margin-top: 1.5rem;
-      background: #fafafa;
-      border: 1.5px solid #f1f5f9;
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-    }
-
-    .puzzle-meter-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 800;
-      font-size: 0.9rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .puzzle-track {
-      width: 100%;
-      height: 14px;
-      background: #e2e8f0;
-      border-radius: var(--radius-pill);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .puzzle-fill {
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(90deg, #fbbf24 0%, #ff758f 100%);
-      border-radius: var(--radius-pill);
-      animation: fillPuzzle 1.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    }
-
-    @keyframes fillPuzzle {
-      0% { width: 0%; }
-      100% { width: 100%; }
-    }
-
-    .puzzle-traits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 0.85rem;
-    }
-
-    .trait-pill {
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 0.25rem 0.65rem;
-      border-radius: var(--radius-pill);
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      color: var(--text-soft);
-    }
-
-    /* ==========================================================
-       排球技能專區 (Volleyball Skill Show)
-       ========================================================== */
-    .section-skills {
-      padding: 5.5rem 0;
-      background: #ffffff;
-      border-top: 1.5px solid #f1f5f9;
-      border-bottom: 1.5px solid #f1f5f9;
-    }
-
-    .skills-cards-wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 1.75rem;
-    }
-
-    .skill-cute-card {
-      background: var(--bg-body);
-      border: 1.5px solid #e2e8f0;
-      border-radius: var(--radius-lg);
-      padding: 2.2rem 2rem;
-      box-shadow: var(--shadow-cute);
-      transition: var(--transition-cute);
-    }
-
-    .skill-cute-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-      border-color: #93c5fd;
-      background: #ffffff;
-    }
-
-    .skill-top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5rem;
-    }
-
-    .skill-title-group {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .skill-badge-soft {
-      padding: 0.25rem 0.75rem;
-      background: #e0f2fe;
-      color: #0284c7;
-      font-weight: 800;
-      font-size: 0.75rem;
-      border-radius: var(--radius-pill);
-    }
-
-    .skill-bar-unit {
-      margin-bottom: 1.35rem;
-    }
-
-    .skill-bar-unit:last-child {
-      margin-bottom: 0;
-    }
-
-    .skill-info-row {
-      display: flex;
-      justify-content: space-between;
-      font-weight: 800;
-      font-size: 0.92rem;
-      color: var(--text-title);
-      margin-bottom: 0.4rem;
-    }
-
-    .cute-progress-bar {
-      height: 10px;
-      background: #e2e8f0;
-      border-radius: var(--radius-pill);
-      overflow: hidden;
-    }
-
-    .cute-progress-inner {
-      height: 100%;
-      border-radius: var(--radius-pill);
-      transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    /* ==========================================================
-       愛好展示：打球 & 玩遊戲 (Hobbies)
-       ========================================================== */
-    .section-hobbies {
-      padding: 5.5rem 0;
-    }
-
-    .hobbies-dual-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .hobby-card-cute {
-      background: #ffffff;
-      border: 1.5px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.4rem;
-      box-shadow: var(--shadow-cute);
-      position: relative;
-      overflow: hidden;
-      transition: var(--transition-cute);
-    }
-
-    .hobby-card-cute:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-hover);
-      border-color: #fbcfe8;
-    }
-
-    .hobby-watermark-icon {
-      position: absolute;
-      right: -15px;
-      bottom: -20px;
-      font-size: 7.5rem;
-      opacity: 0.08;
-      pointer-events: none;
-      transition: transform 0.4s ease;
-    }
-
-    .hobby-card-cute:hover .hobby-watermark-icon {
-      transform: scale(1.15) rotate(8deg);
-      opacity: 0.14;
-    }
-
-    .cute-tag-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .hobby-chip {
-      padding: 0.35rem 0.85rem;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: var(--radius-pill);
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--text-soft);
-      transition: var(--transition-cute);
-    }
-
-    .hobby-chip:hover {
-      background: #ffe4e6;
-      color: #e11d48;
-      border-color: #fecdd3;
-      transform: translateY(-2px);
-    }
-
-    /* ==========================================================
-       趣味「哈哈哈」正能量補充站 (Cute Interactive Generator)
-       ========================================================== */
-    .section-interactive {
-      padding: 5.5rem 0;
-    }
-
-    .interactive-white-card {
-      background: #ffffff;
-      border: 2px dashed #fcd34d;
-      border-radius: var(--radius-lg);
-      padding: 3.5rem 2rem;
-      text-align: center;
-      box-shadow: 0 15px 35px -5px rgba(251, 191, 36, 0.15);
-      position: relative;
-    }
-
-    .quote-display-bubble {
-      background: #fffbeb;
-      border: 1.5px solid #fef08a;
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      margin: 2rem auto;
-      max-width: 620px;
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #b45309;
-      min-height: 85px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-pill);
-      transition: all 0.3s ease;
-    }
-
-    .btn-laugh-energy {
-      padding: 1rem 2.5rem;
-      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-      color: #ffffff;
-      font-weight: 900;
-      font-size: 1.1rem;
-      border-radius: var(--radius-pill);
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
-      transition: var(--transition-cute);
-    }
-
-    .btn-laugh-energy:hover {
-      transform: scale(1.06) rotate(-1deg);
-      box-shadow: 0 10px 28px rgba(245, 158, 11, 0.45);
-    }
-
-    .btn-laugh-energy:active {
-      transform: scale(0.96);
-    }
-
-    .laugh-count-text {
-      margin-top: 1.25rem;
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    /* ==========================================================
-       聯絡我 Contact Section
-       ========================================================== */
-    .section-contact {
-      padding: 5.5rem 0 7rem;
-    }
-
-    .contact-cute-box {
-      background: #ffffff;
-      border: 1.5px solid var(--border-cute);
-      border-radius: var(--radius-lg);
-      padding: 3.5rem 2rem;
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto;
-      box-shadow: var(--shadow-cute);
-    }
-
-    .contact-title {
-      font-size: 2.2rem;
-      font-weight: 900;
-      color: var(--text-title);
-      margin-bottom: 0.8rem;
-    }
-
-    .contact-buttons-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      margin-top: 2rem;
-    }
-
-    /* ==========================================================
-       頁尾 Footer
-       ========================================================== */
-    .footer {
-      border-top: 1.5px solid var(--border-color);
-      background: #ffffff;
-      padding: 2.5rem 0;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    .back-top-cute {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: var(--accent-coral);
-      cursor: pointer;
-      font-weight: 800;
-      margin-top: 0.5rem;
-      transition: var(--transition-cute);
-    }
-
-    .back-top-cute:hover {
-      transform: translateY(-3px);
-    }
-
-    /* ==========================================================
-       捲動淡入動畫 (Scroll Reveal Animation)
-       ========================================================== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(35px);
-      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: opacity, transform;
-    }
-
-    .reveal.active {
-      opacity: 1;
+  .hero {
+    padding: 9.5rem 0 5rem;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 3.5rem;
+  }
+
+  .hero-cute-greeting {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1.1rem;
+    background: #ffffff;
+    border: 1.5px solid #fecdd3;
+    border-radius: var(--radius-pill);
+    color: #e11d48;
+    font-size: 0.9rem;
+    font-weight: 800;
+    box-shadow: var(--shadow-pill);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-main-title {
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: var(--text-main);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-name-highlight {
+    position: relative;
+    color: #ff5c8a;
+    display: inline-block;
+  }
+
+  .hero-name-highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    height: 14px;
+    background: #fed7aa;
+    border-radius: 8px;
+    opacity: 0.45;
+    z-index: -1;
+  }
+
+  /* 「哈哈哈」亮眼簡約引言框 */
+  .hero-laugh-bubble {
+    background: #ffffff;
+    border: 2px dashed #fcd34d;
+    border-radius: var(--radius-md);
+    padding: 1.3rem 1.6rem;
+    margin: 1.4rem 0 1.8rem;
+    box-shadow: var(--shadow-cute);
+    position: relative;
+    transition: var(--transition-bounce);
+  }
+
+  .hero-laugh-bubble:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    border-color: #f59e0b;
+  }
+
+  .laugh-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.65rem;
+    font-weight: 900;
+    color: #f59e0b;
+    margin-bottom: 0.3rem;
+  }
+
+  .laugh-subtext {
+    color: var(--text-sub);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.65;
+  }
+
+  .hero-bio {
+    font-size: 1.08rem;
+    color: var(--text-sub);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .hero-action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .btn-cute-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.85rem;
+    background: #ff758f;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 6px 18px rgba(255, 117, 143, 0.35);
+    transition: var(--transition-bounce);
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-cute-primary:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 24px rgba(255, 117, 143, 0.45);
+  }
+
+  .btn-cute-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.85rem;
+    background: #ffffff;
+    color: var(--text-main);
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--border-cute);
+    box-shadow: var(--shadow-pill);
+    transition: var(--transition-bounce);
+  }
+
+  .btn-cute-secondary:hover {
+    background: #f8fafc;
+    transform: translateY(-4px);
+    border-color: #cbd5e1;
+  }
+
+  /* 可愛白色大頭貼卡片 */
+  .hero-avatar-showcase {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .cute-profile-card {
+    background: #ffffff;
+    border: 2px solid #f1f5f9;
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2rem 2.2rem;
+    text-align: center;
+    box-shadow: var(--shadow-cute);
+    width: 100%;
+    max-width: 330px;
+    position: relative;
+    transition: var(--transition-bounce);
+  }
+
+  .cute-profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: #fbcfe8;
+  }
+
+  .cute-avatar-frame {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 1.4rem;
+    background: linear-gradient(135deg, #fef08a 0%, #fed7aa 50%, #fecdd3 100%);
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 8px 24px rgba(254, 205, 211, 0.6);
+    position: relative;
+  }
+
+  .avatar-inner-face {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    user-select: none;
+  }
+
+  .avatar-floating-tag {
+    position: absolute;
+    bottom: -6px;
+    right: 0px;
+    background: #38bdf8;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-pill);
+    border: 2px solid #fff;
+  }
+
+  .cute-card-name {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+  }
+
+  .cute-card-sub {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  .cute-quick-badges {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quick-tag {
+    padding: 0.3rem 0.75rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .quick-tag.pink {
+    background: #ffe4e6;
+    color: #e11d48;
+  }
+
+  .quick-tag.blue {
+    background: #e0f2fe;
+    color: #0284c7;
+  }
+
+  .cute-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding-top: 1.2rem;
+    border-top: 1.5px dashed #f1f5f9;
+  }
+
+  .stat-number-cute {
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: var(--text-main);
+  }
+
+  .stat-label-cute {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  /* 懸浮可愛貼紙 */
+  .float-sticker {
+    position: absolute;
+    background: #ffffff;
+    border: 1.5px solid #f1f5f9;
+    border-radius: var(--radius-pill);
+    padding: 0.5rem 0.95rem;
+    box-shadow: var(--shadow-cute);
+    font-size: 0.85rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    animation: stickerBob 4s infinite ease-in-out;
+    z-index: 2;
+  }
+
+  .sticker-top {
+    top: -15px;
+    left: -20px;
+    color: #0284c7;
+    animation-delay: 0s;
+  }
+
+  .sticker-bottom {
+    bottom: -15px;
+    right: -20px;
+    color: #d97706;
+    animation-delay: 2s;
+  }
+
+  @keyframes stickerBob {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
 
-    .reveal-delay-1 { transition-delay: 0.12s; }
-    .reveal-delay-2 { transition-delay: 0.24s; }
+    50% {
+      transform: translateY(-7px);
+    }
+  }
 
-    /* ==========================================================
+  /* ==========================================================
+       關於我 & 1000 片拼圖經歷 (可愛白色 Bento Grid)
+       ========================================================== */
+  .section-about {
+    padding: 5.5rem 0;
+  }
+
+  .about-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.6rem;
+  }
+
+  .cute-box {
+    background: var(--bg-white);
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.2rem;
+    box-shadow: var(--shadow-cute);
+    transition: var(--transition-bounce);
+    position: relative;
+  }
+
+  .cute-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: #fbcfe8;
+  }
+
+  .box-icon-bubble {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .bubble-yellow {
+    background: #fef3c7;
+  }
+
+  .bubble-pink {
+    background: #ffe4e6;
+  }
+
+  .bubble-blue {
+    background: #e0f2fe;
+  }
+
+  .bubble-green {
+    background: #dcfce7;
+  }
+
+  .box-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 0.65rem;
+  }
+
+  .box-desc {
+    color: var(--text-sub);
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  .col-7 {
+    grid-column: span 7;
+  }
+
+  .col-5 {
+    grid-column: span 5;
+  }
+
+  .col-4 {
+    grid-column: span 4;
+  }
+
+  /* 1000片拼圖進度條 */
+  .puzzle-cute-meter {
+    margin-top: 1.5rem;
+    background: #fafafa;
+    border: 1.5px solid #f1f5f9;
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+  }
+
+  .puzzle-meter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .puzzle-track {
+    width: 100%;
+    height: 14px;
+    background: #e2e8f0;
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .puzzle-fill {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #fbbf24 0%, #ff758f 100%);
+    border-radius: var(--radius-pill);
+    animation: fillPuzzle 1.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes fillPuzzle {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  .puzzle-traits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.85rem;
+  }
+
+  .trait-pill {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-pill);
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    color: var(--text-sub);
+  }
+
+  /* ==========================================================
+       排球技能專區 (Volleyball Skill Show)
+       ========================================================== */
+  .section-skills {
+    padding: 5.5rem 0;
+    background: #ffffff;
+    border-top: 1.5px solid #f1f5f9;
+    border-bottom: 1.5px solid #f1f5f9;
+  }
+
+  .skills-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.75rem;
+  }
+
+  .skill-cute-card {
+    background: var(--bg-body);
+    border: 1.5px solid #e2e8f0;
+    border-radius: var(--radius-lg);
+    padding: 2.2rem 2rem;
+    box-shadow: var(--shadow-cute);
+    transition: var(--transition-bounce);
+  }
+
+  .skill-cute-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: #93c5fd;
+    background: #ffffff;
+  }
+
+  .skill-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .skill-title-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .skill-badge-soft {
+    padding: 0.25rem 0.75rem;
+    background: #e0f2fe;
+    color: #0284c7;
+    font-weight: 800;
+    font-size: 0.75rem;
+    border-radius: var(--radius-pill);
+  }
+
+  .skill-bar-unit {
+    margin-bottom: 1.35rem;
+  }
+
+  .skill-bar-unit:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-info-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 0.92rem;
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+  }
+
+  .cute-progress-bar {
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+
+  .cute-progress-inner {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* ==========================================================
+       愛好展示：打球 & 玩遊戲 (Hobbies)
+       ========================================================== */
+  .section-hobbies {
+    padding: 5.5rem 0;
+  }
+
+  .hobbies-dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .hobby-card-cute {
+    background: #ffffff;
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.4rem;
+    box-shadow: var(--shadow-cute);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-bounce);
+  }
+
+  .hobby-card-cute:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: #fbcfe8;
+  }
+
+  .hobby-watermark-icon {
+    position: absolute;
+    right: -15px;
+    bottom: -20px;
+    font-size: 7.5rem;
+    opacity: 0.08;
+    pointer-events: none;
+    transition: transform 0.4s ease;
+  }
+
+  .hobby-card-cute:hover .hobby-watermark-icon {
+    transform: scale(1.15) rotate(8deg);
+    opacity: 0.14;
+  }
+
+  .cute-tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .hobby-chip {
+    padding: 0.35rem 0.85rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-sub);
+    transition: var(--transition-bounce);
+  }
+
+  .hobby-chip:hover {
+    background: #ffe4e6;
+    color: #e11d48;
+    border-color: #fecdd3;
+    transform: translateY(-2px);
+  }
+
+  /* ==========================================================
+       趣味「哈哈哈」正能量補充站 (Cute Interactive Generator)
+       ========================================================== */
+  .section-interactive {
+    padding: 5.5rem 0;
+  }
+
+  .interactive-white-card {
+    background: #ffffff;
+    border: 2px dashed #fcd34d;
+    border-radius: var(--radius-lg);
+    padding: 3.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 15px 35px -5px rgba(251, 191, 36, 0.15);
+    position: relative;
+  }
+
+  .quote-display-bubble {
+    background: #fffbeb;
+    border: 1.5px solid #fef08a;
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 620px;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #b45309;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-pill);
+    transition: all 0.3s ease;
+  }
+
+  .btn-laugh-energy {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-radius: var(--radius-pill);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+    transition: var(--transition-bounce);
+  }
+
+  .btn-laugh-energy:hover {
+    transform: scale(1.06) rotate(-1deg);
+    box-shadow: 0 10px 28px rgba(245, 158, 11, 0.45);
+  }
+
+  .btn-laugh-energy:active {
+    transform: scale(0.96);
+  }
+
+  .laugh-count-text {
+    margin-top: 1.25rem;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  /* ==========================================================
+       聯絡我 Contact Section
+       ========================================================== */
+  .section-contact {
+    padding: 5.5rem 0 7rem;
+  }
+
+  .contact-cute-box {
+    background: #ffffff;
+    border: 1.5px solid var(--border-cute);
+    border-radius: var(--radius-lg);
+    padding: 3.5rem 2rem;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-cute);
+  }
+
+  .contact-title {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: var(--text-main);
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-buttons-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  /* ==========================================================
+       頁尾 Footer
+       ========================================================== */
+  .footer {
+    border-top: 1.5px solid var(--border-color);
+    background: #ffffff;
+    padding: 2.5rem 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .back-top-cute {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--pastel-pink);
+    cursor: pointer;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    transition: var(--transition-bounce);
+  }
+
+  .back-top-cute:hover {
+    transform: translateY(-3px);
+  }
+
+  /* ==========================================================
+       捲動淡入動畫 (Scroll Reveal Animation)
+       ========================================================== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 {
+    transition-delay: 0.12s;
+  }
+
+  .reveal-delay-2 {
+    transition-delay: 0.24s;
+  }
+
+  /* ==========================================================
        響應式設計 (手機與電腦皆美觀自適應)
        ========================================================== */
-    @media (max-width: 900px) {
-      .hero-layout {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 3rem;
-      }
-      .hero-laugh-bubble { text-align: left; }
-      .hero-action-buttons { justify-content: center; }
-      .about-cards-grid { grid-template-columns: 1fr; }
-      .col-7, .col-5, .col-4 { grid-column: span 1; }
-      .hobbies-dual-grid { grid-template-columns: 1fr; }
+  @media (max-width: 900px) {
+    .hero-layout {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 3rem;
     }
 
-    @media (max-width: 768px) {
-      .hero-main-title { font-size: 2.75rem; }
-      .navbar { top: 0.5rem; padding: 0 0.75rem; }
-      .nav-inner { width: 100%; justify-content: space-between; padding: 0.6rem 1rem; }
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        margin-top: 0.5rem;
-        background: #ffffff;
-        border: 1.5px solid var(--border-cute);
-        border-radius: var(--radius-md);
-        flex-direction: column;
-        padding: 1rem;
-        gap: 0.8rem;
-        box-shadow: var(--shadow-cute);
-      }
-      .nav-links.open { display: flex; }
-      .mobile-menu-btn { display: block; }
-      .nav-cta-btn { display: none; }
+    .hero-laugh-bubble {
+      text-align: left;
     }
-  </style>
+
+    .hero-action-buttons {
+      justify-content: center;
+    }
+
+    .about-cards-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .col-7,
+    .col-5,
+    .col-4 {
+      grid-column: span 1;
+    }
+
+    .hobbies-dual-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-main-title {
+      font-size: 2.75rem;
+    }
+
+    .navbar {
+      top: 0.5rem;
+      padding: 0 0.75rem;
+    }
+
+    .nav-inner {
+      width: 100%;
+      justify-content: space-between;
+      padding: 0.6rem 1rem;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin-top: 0.5rem;
+      background: #ffffff;
+      border: 1.5px solid var(--border-cute);
+      border-radius: var(--radius-md);
+      flex-direction: column;
+      padding: 1rem;
+      gap: 0.8rem;
+      box-shadow: var(--shadow-cute);
+    }
+
+    .nav-links.open {
+      display: flex;
+    }
+
+    .mobile-menu-btn {
+      display: block;
+    }
+
+    .nav-cta-btn {
+      display: none;
+    }
+  }
+</style>
 </head>
+
 <body>
 
   <!-- 可愛白色微光背景 -->
@@ -1074,7 +1203,7 @@
     <section class="hero" id="hero">
       <div class="container">
         <div class="hero-layout">
-          
+
           <!-- 左側文字 -->
           <div class="hero-text-side reveal">
             <div class="hero-cute-greeting">
@@ -1085,37 +1214,38 @@
               我是 <span class="hero-name-highlight">劉恒淯 Vincent</span>
             </h1>
 
-            <!-- 一句話介紹：哈哈哈（可愛泡泡框） -->
+            <!-- 一句話介紹自己：「哈哈哈」 -->
             <div class="hero-laugh-bubble">
               <div class="laugh-tag">
                 <span>😆</span> 「哈哈哈」
               </div>
               <p class="laugh-subtext">
-                生活總有挑戰，但只要笑得出來，就沒有跨不過去的坎！「哈哈哈」是我最簡單、也最強大的正向超能力。
+                這是我面對生活與未知的神奇魔法咒語！用笑聲撫平焦慮，用開朗擊碎難關。只要保持微笑，球一定能救得到！
               </p>
             </div>
 
             <p class="hero-bio">
-              喜歡在排球場上享受快節奏的撲救與躍起，也熱愛在遊戲世界裡拆解難關；完成過 <strong>1000 片拼圖</strong>，動靜皆宜、樂觀滿滿！
+              熱愛在排球場上盡情奔跑救球，沉迷於遊戲世界的策略挑戰；同時也是能靜下心完成 <strong>1000 片拼圖</strong> 的耐心大師！
             </p>
 
             <div class="hero-action-buttons">
               <a href="#skills" class="btn-cute-primary">
-                <span>🏐</span> 看排球專項技能
+                <span>🏐</span> 看我的排球特質
               </a>
               <a href="#about" class="btn-cute-secondary">
-                <span>🧩</span> 探索 1000 片拼圖經歷
+                <span>🧩</span> 探索 1000 片拼圖
               </a>
             </div>
           </div>
 
-          <!-- 右側大頭貼卡片 -->
-          <div class="hero-avatar-showcase reveal reveal-delay-1">
+          <!-- 右側可愛卡片 -->
+          <div class="hero-avatar-showcase reveal reveal-delay-2">
+
             <div class="float-sticker sticker-top">
-              <span>🏐</span> 排球狂熱者
+              <span>🏐</span> 排球熱血隊友
             </div>
             <div class="float-sticker sticker-bottom">
-              <span>🧩</span> 1000片拼圖達人
+              <span>🧩</span> 1000 片拼圖達人
             </div>
 
             <div class="cute-profile-card">
@@ -1127,25 +1257,25 @@
               </div>
 
               <h2 class="cute-card-name">劉恒淯 (Vincent)</h2>
-              <p class="cute-card-sub">開朗樂天派・排球運動員・拼圖挑戰者</p>
+              <p class="cute-card-sub">開朗樂天派・排球熱血玩家</p>
 
               <div class="cute-quick-badges">
-                <span class="quick-tag pink">#打球熱血</span>
-                <span class="quick-tag blue">#玩遊戲</span>
-                <span class="quick-tag">#極致專注</span>
+                <span class="quick-tag pink">🏐 愛排球</span>
+                <span class="quick-tag blue">🎮 愛玩遊戲</span>
               </div>
 
               <div class="cute-stats-row">
                 <div>
-                  <div class="stat-number-cute" style="color: #ff5c8a;">1,000 片</div>
-                  <div class="stat-label-cute">拼圖耐心完賽</div>
+                  <div class="stat-number-cute" style="color: #ff758f;">1000+</div>
+                  <div class="stat-label-cute">拼圖耐心碎片</div>
                 </div>
                 <div>
-                  <div class="stat-number-cute" style="color: #0284c7;">100%</div>
-                  <div class="stat-label-cute">笑容與正能量</div>
+                  <div class="stat-number-cute" style="color: #fbbf24;">100%</div>
+                  <div class="stat-label-cute">歡樂正能量</div>
                 </div>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -1153,83 +1283,84 @@
     </section>
 
     <!-- ==========================================================
-         ABOUT ME & 1000片拼圖經歷 (Bento Cards)
+         ABOUT ME & 1000 片拼圖經歷 (可愛白色 Bento Grid)
          ========================================================== -->
     <section class="section-about" id="about">
       <div class="container">
-        
+
         <div class="section-header reveal">
           <div class="cute-pill-tag">ABOUT ME</div>
-          <h2 class="section-title">認識 Vincent 的可愛特質</h2>
-          <p class="section-subtitle">有坐得住一整天的沉穩耐心，也有球場上熱情吶喊的無窮活力。</p>
+          <h2 class="section-title">關於我：<span class="pink">動靜皆宜的特質</span></h2>
+          <p class="section-subtitle">能沉靜一下午拼完千片拼圖，也能在排球場上飛撲救球！</p>
         </div>
 
         <div class="about-cards-grid">
-          
-          <!-- 1000片拼圖作品展示 (Col 7) -->
+
+          <!-- 1000 片拼圖精選 (Span 7) -->
           <div class="cute-box col-7 reveal">
             <div class="box-icon-bubble bubble-yellow">🧩</div>
-            <h3 class="box-title">代表事蹟：獨力完成「1000 片拼圖」</h3>
+            <h3 class="box-title">代表事蹟：挑戰並完成「1000 片拼圖」</h3>
             <p class="box-desc">
-              拼完 1000 片拼圖是個看似簡單、實則極度考驗<strong>「耐心、大局觀與細節觀察力」</strong>的過程。
-              面對成百上千個色塊碎片，我學會了不慌不忙、分類整理、步步推進。
-              這份經歷也讓我相信：<strong>「只要肯專注堅持，再複雜的難題終將拼湊出完整答案！」</strong>
+              拼圖是訓練專注力與極限耐心的最好方式。1000 片看似眼花繚亂，但只要從邊框分類、色系漸層開始，一步步推敲空間邏輯，就能完成宏偉全貌！
+              這讓我學會：<strong>「即使再龐大的挑戰，只要耐著性子拆解，一片片放對位置，就一定能破關！」</strong>
             </p>
 
             <div class="puzzle-cute-meter">
               <div class="puzzle-meter-header">
-                <span style="color: var(--text-title);">拼圖完成度成就</span>
-                <span style="color: #ff5c8a;">1000 / 1000 Pieces (100%)</span>
+                <span>🎯 挑戰成果進度</span>
+                <span style="color: #ff758f;">1,000 / 1,000 片 (完美完賽 100%)</span>
               </div>
               <div class="puzzle-track">
                 <div class="puzzle-fill"></div>
               </div>
               <div class="puzzle-traits">
-                <span class="trait-pill">✓ 頂級耐心與抗挫折</span>
-                <span class="trait-pill">✓ 微細色差辨識</span>
-                <span class="trait-pill">✓ 宏觀結構建構力</span>
+                <span class="trait-pill">✓ 超凡專注力</span>
+                <span class="trait-pill">✓ 細微色差觀察</span>
+                <span class="trait-pill">✓ 抗挫折耐心</span>
+                <span class="trait-pill">✓ 宏觀大局建構</span>
               </div>
             </div>
           </div>
 
-          <!-- 一句話：哈哈哈 (Col 5) -->
+          <!-- 座右銘：哈哈哈 (Span 5) -->
           <div class="cute-box col-5 reveal reveal-delay-1">
             <div class="box-icon-bubble bubble-pink">😄</div>
-            <h3 class="box-title">處事哲學：哈哈哈</h3>
+            <h3 class="box-title">核心信念：哈哈哈</h3>
             <p class="box-desc">
-              「哈哈哈」看似輕鬆搞怪，卻是我最強大的心態解方。打球失誤時笑了笑拍拍隊友再來過；玩遊戲遇挫時笑一聲調整戰術再出發！保持快樂，好運自然常伴左右。
+              「哈哈哈」不是敷衍，而是我最真誠的樂天哲學！遇到掉球失誤，笑三個字重新深呼吸；遇到生活卡關，用笑聲給身邊的人打氣！
             </p>
-            <div style="margin-top: 1.5rem; padding: 1rem; background: #fff5f5; border-radius: 16px; border: 1.5px dashed #fecdd3;">
-              <p style="font-size: 0.92rem; font-weight: 800; color: #e11d48;">
-                「笑容不是不在意，而是擁有迎擊任何挑戰的勇氣！」
+            <div
+              style="margin-top: 1.25rem; padding: 1rem 1.2rem; background: #fff1f2; border-radius: var(--radius-sm); border-left: 3px solid #ff758f;">
+              <p style="font-size: 0.92rem; color: #be123c; font-weight: 700;">
+                「只要還能笑得出來，就沒有跨不過去的坎！」
               </p>
             </div>
           </div>
 
-          <!-- 特質 1: 動靜平衡 (Col 4) -->
+          <!-- 特質 1: 動靜皆宜 (Span 4) -->
           <div class="cute-box col-4 reveal">
-            <div class="box-icon-bubble bubble-blue">⚖️</div>
+            <div class="box-icon-bubble bubble-blue">⚡</div>
             <h3 class="box-title">動靜平衡</h3>
             <p class="box-desc">
-              沉下心時能安靜拼圖數小時，動起來時在排球場上飛奔救球，是個能量收放自如的人。
+              拼圖時極致沉著，球場上熱血爆發！能在不同場景切換最佳狀態。
             </p>
           </div>
 
-          <!-- 特質 2: 團隊開心果 (Col 4) -->
+          <!-- 特質 2: 團隊夥伴 (Span 4) -->
           <div class="cute-box col-4 reveal reveal-delay-1">
             <div class="box-icon-bubble bubble-green">🤝</div>
-            <h3 class="box-title">溫暖隊友</h3>
+            <h3 class="box-title">氣氛開心果</h3>
             <p class="box-desc">
-              親和好相處，擅長化解尷尬氣氛，能為團隊帶來融洽的笑聲與穩定向前的動力。
+              天生自帶親和力，能快速化解尷尬氣氛，在團隊中是最值得信賴的開心夥伴。
             </p>
           </div>
 
-          <!-- 特質 3: 喜愛學習 (Col 4) -->
+          <!-- 特質 3: 好奇進化 (Span 4) -->
           <div class="cute-box col-4 reveal reveal-delay-2">
-            <div class="box-icon-bubble bubble-yellow">🌱</div>
-            <h3 class="box-title">熱愛探索</h3>
+            <div class="box-icon-bubble bubble-yellow">🚀</div>
+            <h3 class="box-title">熱愛學習新挑戰</h3>
             <p class="box-desc">
-              對新鮮事物抱持好奇心，不論是排球新技巧或是新遊戲玩法，都樂於摸索嘗試！
+              不管是新排球戰術、新遊戲關卡還是未解之謎，都充滿躍躍欲試的熱情！
             </p>
           </div>
 
@@ -1243,119 +1374,127 @@
          ========================================================== -->
     <section class="section-skills" id="skills">
       <div class="container">
-        
+
         <div class="section-header reveal">
-          <div class="cute-pill-tag" style="color: #0284c7;">VOLLEYBALL & SKILLS</div>
-          <h2 class="section-title">擅長與想學的技能：<span style="color: #0284c7;">排球 (Volleyball)</span></h2>
-          <p class="section-subtitle">排球是一項球不能落地的運動，也是六個人同心協力的極致體現。</p>
+          <div class="cute-pill-tag">SKILLS & ATHLETICS</div>
+          <h2 class="section-title">擅長與目標技能：<span class="pink">排球 (Volleyball)</span></h2>
+          <p class="section-subtitle">「不讓球落地」是排球最浪漫的堅持，也是六人一心信任的體現！</p>
         </div>
 
         <div class="skills-cards-wrapper">
-          
-          <!-- 排球專項能力 -->
+
+          <!-- 排球專項卡片 -->
           <div class="skill-cute-card reveal">
             <div class="skill-top-bar">
               <div class="skill-title-group">
-                <span style="font-size: 2rem;">🏐</span>
+                <span style="font-size: 2.2rem;">🏐</span>
                 <div>
-                  <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-title);">排球核心技能</h3>
-                  <span style="font-size: 0.82rem; color: var(--text-muted);">球場實戰技術</span>
+                  <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">排球專項技能</h3>
+                  <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">熱血練習中</span>
                 </div>
               </div>
-              <span class="skill-badge-soft">熱烈修練中 🔥</span>
+              <span class="skill-badge-soft">核心運動</span>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>接發球與地面救球 (Receive / Dig)</span>
+                <span>防守與接發球 (Dig & Receive)</span>
                 <span style="color: #0284c7;">88%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 88%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 88%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
               </div>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>團隊跑位與掩護 (Team Tactics)</span>
+                <span>團隊跑位與互相掩護 (Team Tactics)</span>
                 <span style="color: #0284c7;">85%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 85%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 85%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
               </div>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>發球穩定性 (Serve)</span>
+                <span>發球穩定度 (Serve)</span>
                 <span style="color: #0284c7;">80%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 80%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 80%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
               </div>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>躍起扣球進攻 (Spike)</span>
+                <span>扣殺與變線進攻 (Spike)</span>
                 <span style="color: #0284c7;">78%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 78%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 78%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div>
               </div>
             </div>
           </div>
 
-          <!-- 綜合軟實力 -->
+          <!-- 綜合軟實力卡片 -->
           <div class="skill-cute-card reveal reveal-delay-1">
             <div class="skill-top-bar">
               <div class="skill-title-group">
-                <span style="font-size: 2rem;">🧠</span>
+                <span style="font-size: 2.2rem;">🌟</span>
                 <div>
-                  <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-title);">思維與特質實力</h3>
-                  <span style="font-size: 0.82rem; color: var(--text-muted);">動靜兼備的內在優勢</span>
+                  <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">綜合心態與實力</h3>
+                  <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">動靜兼修的硬底子</span>
                 </div>
               </div>
-              <span class="skill-badge-soft" style="background: #fef3c7; color: #b45309;">核心特質 ✨</span>
+              <span class="skill-badge-soft" style="background: #fef3c7; color: #b45309;">強韌內在</span>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>千片拼圖鍛鍊出的專注耐力</span>
-                <span style="color: #ff5c8a;">98%</span>
+                <span>千片拼圖鍛造的耐心定力</span>
+                <span style="color: #ff758f;">98%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 98%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>抗壓性與樂天心態 (哈哈哈哲學)</span>
-                <span style="color: #ff5c8a;">95%</span>
-              </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 95%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 98%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
               </div>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>遊戲策略思維與反應靈敏度</span>
-                <span style="color: #ff5c8a;">86%</span>
+                <span>哈哈哈開朗抗壓精神</span>
+                <span style="color: #ff758f;">95%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 86%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 95%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
               </div>
             </div>
 
             <div class="skill-bar-unit">
               <div class="skill-info-row">
-                <span>新運動與技能學習力</span>
-                <span style="color: #ff5c8a;">90%</span>
+                <span>遊戲策略與手眼協調</span>
+                <span style="color: #ff758f;">88%</span>
               </div>
               <div class="cute-progress-bar">
-                <div class="cute-progress-inner" style="width: 90%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
+                <div class="cute-progress-inner"
+                  style="width: 88%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-unit">
+              <div class="skill-info-row">
+                <span>新事物快速上手能力</span>
+                <span style="color: #ff758f;">90%</span>
+              </div>
+              <div class="cute-progress-bar">
+                <div class="cute-progress-inner"
+                  style="width: 90%; background: linear-gradient(90deg, #fbbf24, #ff758f);"></div>
               </div>
             </div>
           </div>
@@ -1366,33 +1505,33 @@
     </section>
 
     <!-- ==========================================================
-         愛好：打球 ＆ 玩遊戲 (Hobbies)
+         生活愛好：打球 ＆ 玩遊戲 (Hobbies)
          ========================================================== -->
     <section class="section-hobbies" id="hobbies">
       <div class="container">
-        
+
         <div class="section-header reveal">
-          <div class="cute-pill-tag">HOBBIES & LIFESTYLE</div>
-          <h2 class="section-title">我的兩大愛好：<span style="color: #ff5c8a;">打球 ＆ 玩遊戲</span></h2>
-          <p class="section-subtitle">動態流汗的暢快，與沉浸探索虛擬世界的樂趣！</p>
+          <div class="cute-pill-tag">HOBBIES & PASSIONS</div>
+          <h2 class="section-title">我的兩大愛好：<span class="pink">打球 ＆ 玩遊戲</span></h2>
+          <p class="section-subtitle">球場上的流汗熱血，遊戲世界的策略解謎，構成最充實的日常！</p>
         </div>
 
         <div class="hobbies-dual-grid">
-          
+
           <!-- 愛好 1: 打球 -->
           <div class="hobby-card-cute reveal">
             <div class="hobby-watermark-icon">🏀</div>
-            <div class="box-icon-bubble bubble-yellow">🏀</div>
+            <div class="box-icon-bubble bubble-pink">🏀</div>
             <h3 class="box-title">愛好之一：熱血打球</h3>
             <p class="box-desc">
-              不論是排球場上團隊托起的信任，或是籃球、羽球等多元球類，只要站上球場就能全神貫注！享受流汗奔跑、和球友擊掌加油的純粹快樂。
+              運動能讓整個人的精神煥發！除了最愛的排球之外，籃球、羽球也都很喜歡。享受大家全神貫注追著一顆球、得分時並肩擊掌的純粹快樂！
             </p>
             <div class="cute-tag-cloud">
-              <span class="hobby-chip">🏐 排球熱血撲救</span>
-              <span class="hobby-chip">🏀 球場快節奏</span>
-              <span class="hobby-chip">🤝 團隊信任感</span>
-              <span class="hobby-chip">🏃 體力充沛</span>
-              <span class="hobby-chip">☀️ 戶外活力</span>
+              <span class="hobby-chip">🏐 排球連擊</span>
+              <span class="hobby-chip">🏀 球場奔馳</span>
+              <span class="hobby-chip">🔥 爆發力訓練</span>
+              <span class="hobby-chip">🤝 團隊默契</span>
+              <span class="hobby-chip">🏃 揮汗解壓</span>
             </div>
           </div>
 
@@ -1400,16 +1539,16 @@
           <div class="hobby-card-cute reveal reveal-delay-1">
             <div class="hobby-watermark-icon">🎮</div>
             <div class="box-icon-bubble bubble-blue">🎮</div>
-            <h3 class="box-title">愛好之二：歡樂玩遊戲</h3>
+            <h3 class="box-title">愛好之二：沉浸玩遊戲</h3>
             <p class="box-desc">
-              從策略競技到解謎冒險，遊戲是鍛鍊即時反應與邏輯的最佳休閒！也是和好朋友組隊語音開黑、一邊大笑「哈哈哈」一邊破關的最棒時光。
+              不管是策略破關、多人組隊還是解謎挑戰，遊戲是激發想像力與鍛鍊即時反應的好夥伴。和朋友線上開黑語音連線，歡樂翻倍！
             </p>
             <div class="cute-tag-cloud">
-              <span class="hobby-chip">🎯 戰術分析</span>
+              <span class="hobby-chip">🎯 戰術制定</span>
               <span class="hobby-chip">⚡ 敏捷反應</span>
-              <span class="hobby-chip">🧩 解謎巧思</span>
-              <span class="hobby-chip">🎙️ 語音組隊大笑</span>
-              <span class="hobby-chip">🏆 團隊合作通關</span>
+              <span class="hobby-chip">🧩 邏輯推理</span>
+              <span class="hobby-chip">🎤 語音開黑組隊</span>
+              <span class="hobby-chip">🎉 享受破關快感</span>
             </div>
           </div>
 
@@ -1419,30 +1558,30 @@
     </section>
 
     <!-- ==========================================================
-         趣味互動：哈哈哈正能量補充站
+         趣味「哈哈哈」正能量補充站 (Cute Interactive Generator)
          ========================================================== -->
     <section class="section-interactive" id="interactive">
       <div class="container">
-        
+
         <div class="interactive-white-card reveal">
-          <div class="cute-pill-tag" style="background: #fef3c7; color: #b45309; border-color: #fde68a;">
-            FUN & SMILE
-          </div>
-          <h2 class="section-title">「哈哈哈」正能量生成站</h2>
-          <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
-            今天遇到了瓶頸或疲累嗎？按一下按鈕，領取 Vincent 專屬的可愛打氣語錄！
+          <div class="cute-pill-tag" style="color: #d97706; background: #fffbeb;">FUN INTERACTION</div>
+          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-main); margin-bottom: 0.6rem;">
+            「哈哈哈」正能量補充站
+          </h2>
+          <p style="color: var(--text-sub); max-width: 520px; margin: 0 auto; font-size: 1.05rem;">
+            今天覺得累了嗎？按一下按鈕，解鎖 Vincent 專屬的活力語錄，把微笑傳遞給你！
           </p>
 
-          <div class="quote-display-bubble" id="quoteBox">
-            「哈哈哈！只要排球還沒落地，比賽就還沒結束！」
+          <div class="quote-display-bubble" id="quoteBubble">
+            「哈哈哈！只要球還沒落地，比賽就還沒結束！」
           </div>
 
           <button class="btn-laugh-energy" id="laughBtn">
-            ✨ 點我注入「哈哈哈」能量！
+            ✨ 按一下收集「哈哈哈」笑聲！
           </button>
 
           <div class="laugh-count-text" id="laughCounter">
-            已散播歡樂次數：<strong style="color: #ff5c8a; font-size: 1.15rem;">0</strong> 次 🎈
+            已送出歡樂笑聲：<strong style="color: #ff758f; font-size: 1.15rem;">0</strong> 次 🎈
           </div>
         </div>
 
@@ -1450,24 +1589,24 @@
     </section>
 
     <!-- ==========================================================
-         聯絡我 Contact
+         聯絡我 Contact Section
          ========================================================== -->
     <section class="section-contact" id="contact">
       <div class="container">
-        
+
         <div class="contact-cute-box reveal">
-          <span style="font-size: 3.5rem; display: block; margin-bottom: 0.8rem;">💌</span>
-          <h2 class="contact-title">想約排球、組隊打遊戲，<br>或一起拼 2000 片拼圖？</h2>
-          <p style="color: var(--text-soft); font-size: 1.05rem; max-width: 480px; margin: 0 auto;">
-            很高興遇見你！歡迎隨時打個招呼，保持好心情，哈哈哈！
+          <span style="font-size: 3.2rem; display: block; margin-bottom: 0.8rem;">👋</span>
+          <h2 class="contact-title">想約打球、組隊打遊戲，<br>或聊聊拼圖技巧嗎？</h2>
+          <p style="color: var(--text-sub); font-size: 1.05rem; max-width: 480px; margin: 0 auto;">
+            很高興遇見你！歡迎隨時打聲招呼，一起用「哈哈哈」的好心情面對每一天！
           </p>
 
           <div class="contact-buttons-row">
             <button class="btn-cute-primary" onclick="copyEmail('vincent@example.com', this)">
-              <span>📧</span> 複製我的 Email
+              <span>💌</span> 複製我的信箱
             </button>
             <a href="#hero" class="btn-cute-secondary">
-              <span>🚀</span> 飛回頁首
+              <span>🚀</span> 滑回頁首重看
             </a>
           </div>
         </div>
@@ -1476,26 +1615,26 @@
     </section>
   </main>
 
-  <!-- 簡約純白頁尾 -->
+  <!-- 頁尾 Footer -->
   <footer class="footer">
     <div class="container">
       <p>© 2026 劉恒淯 (Vincent). All rights reserved.</p>
-      <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">
-        設計風格：簡約・可愛・純白 ｜ 精神力量：哈哈哈
+      <p style="font-size: 0.84rem; color: var(--text-muted); margin-top: 0.3rem;">
+        設計風格：純白簡約可愛 ｜ 主色：純白搭配柔和粉彩 ｜ 核心信念：哈哈哈
       </p>
       <div class="back-top-cute" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        ↑ 點我滑到最上方
+        ↑ 咻一下滑回頂部
       </div>
     </div>
   </footer>
 
   <!-- ==========================================================
-       原生 JavaScript：捲動淡入、手機選單與可愛彩蛋
+       原生 JAVASCRIPT：捲動淡入、手機選單與互動彩蛋
        ========================================================== -->
   <script>
     // 1. 捲動淡入動畫 (IntersectionObserver)
     document.addEventListener('DOMContentLoaded', () => {
-      const revealElements = document.querySelectorAll('.reveal');
+      const reveals = document.querySelectorAll('.reveal');
 
       const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
@@ -1506,76 +1645,80 @@
         });
       }, {
         threshold: 0.12,
-        rootMargin: '0px 0px -40px 0px'
+        rootMargin: '0px 0px -30px 0px'
       });
 
-      revealElements.forEach(el => observer.observe(el));
+      reveals.forEach(el => observer.observe(el));
     });
 
-    // 2. 手機版選單切換
-    const mobileBtn = document.getElementById('mobileMenuBtn');
+    // 2. 手機版漢堡導覽選單
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navLinks = document.getElementById('navLinks');
 
-    mobileBtn.addEventListener('click', () => {
+    mobileMenuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('open');
-      mobileBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+      mobileMenuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
     });
 
+    // 點擊任何導覽連結時關閉選單
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
-        mobileBtn.textContent = '☰';
+        mobileMenuBtn.textContent = '☰';
       });
     });
 
-    // 3. 「哈哈哈」正能量語錄隨機產生器
+    // 3. 「哈哈哈」能量語錄隨機生成
     const energyQuotes = [
-      "「哈哈哈！只要排球還沒落地，比賽就還沒結束！」",
-      "「1000 片拼圖都能搞定，這世上還有什麼能難倒我？哈哈哈！」",
-      "「球場上失誤別低頭，喊一聲哈哈哈，下顆球直接救起！」",
-      "「生活就像玩遊戲，卡關就笑一笑，換個戰術再通關！」",
-      "「每一片拼圖都有它的位置，你也一樣閃閃發光！哈哈哈！」",
-      "「保持開朗，天下無敵！今天也要元氣滿滿喔！」",
-      "「球會落地，但笑容不會！大家一起哈哈哈！」"
+      "「哈哈哈！只要球還沒落地，比賽就還沒結束！」",
+      "「1000片拼圖都能拼完，這世上還有什麼難得倒我？哈哈哈！」",
+      "「排球場上失分不用怕，喊一聲哈哈哈，下顆球直接接起來！」",
+      "「玩遊戲就是要敢開大招，生活也是！保持開朗，天下無敵！」",
+      "「哈哈哈！保持笑容，好運和好球都會自動被你吸引過來！」",
+      "「每一片拼圖都有它的專屬位置，你也一樣獨一無二！」",
+      "「人生就像一場排球賽，沒有完美的個人，只有互相托起的團隊！」",
+      "「哈哈哈！遇到難題先深呼吸笑三個字，心情好解法就來了！」"
     ];
 
-    let laughCount = 0;
+    let count = 0;
     const laughBtn = document.getElementById('laughBtn');
-    const quoteBox = document.getElementById('quoteBox');
-    const counterDisplay = document.getElementById('laughCounter');
+    const quoteBubble = document.getElementById('quoteBubble');
+    const laughCounter = document.getElementById('laughCounter');
 
     laughBtn.addEventListener('click', () => {
-      laughCount++;
-      const randIdx = Math.floor(Math.random() * energyQuotes.length);
+      count++;
+      const randomQuote = energyQuotes[Math.floor(Math.random() * energyQuotes.length)];
 
-      quoteBox.style.opacity = '0';
-      quoteBox.style.transform = 'scale(0.92)';
+      // 縮放微動畫
+      quoteBubble.style.opacity = '0';
+      quoteBubble.style.transform = 'scale(0.95)';
 
       setTimeout(() => {
-        quoteBox.textContent = energyQuotes[randIdx];
-        quoteBox.style.opacity = '1';
-        quoteBox.style.transform = 'scale(1)';
+        quoteBubble.textContent = randomQuote;
+        quoteBubble.style.opacity = '1';
+        quoteBubble.style.transform = 'scale(1)';
       }, 180);
 
-      counterDisplay.innerHTML = `已散播歡樂次數：<strong style="color: #ff5c8a; font-size: 1.15rem;">${laughCount}</strong> 次 🎈`;
+      laughCounter.innerHTML = `已送出歡樂笑聲：<strong style="color: #ff758f; font-size: 1.15rem;">${count}</strong> 次 🎉`;
     });
 
-    // 4. 複製信箱提示
-    function copyEmail(address, btn) {
+    // 4. 複製信箱小功能
+    function copyEmail(email, btn) {
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(address).then(() => {
-          const original = btn.innerHTML;
-          btn.innerHTML = "<span>✓</span> 已複製信箱囉！";
-          btn.style.background = "#34d399";
+        navigator.clipboard.writeText(email).then(() => {
+          const originalContent = btn.innerHTML;
+          btn.innerHTML = "<span>✓</span> 已複製信箱！";
+          btn.style.background = "linear-gradient(135deg, #10b981 0%, #059669 100%)";
           setTimeout(() => {
-            btn.innerHTML = original;
+            btn.innerHTML = originalContent;
             btn.style.background = "";
-          }, 2400);
+          }, 2200);
         });
       } else {
-        alert("信箱是：" + address);
+        alert("聯絡信箱：" + email);
       }
     }
   </script>
 </body>
+
 </html>
