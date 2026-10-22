@@ -4,69 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>劉恒淯 Vincent | 個人清新藍極簡履歷</title>
-  <meta name="description" content="劉恒淯 (Vincent) 的個人自我介紹與履歷網頁。清新蔚藍純白風格，熱愛排球打球、玩遊戲與 1000 片拼圖挑戰！">
+  <title>劉恒淯 Vincent | 狂野不羈・深藍暗黑狂潮</title>
+  <meta name="description" content="劉恒淯 (Vincent) 的個人自我介紹。狂野、放蕩不羈的深藍與純黑極限美學，球場扣殺、狂傲電競與千片混沌拼圖的征服狂人！">
 
-  <!-- Google Fonts: 圓潤可愛與現代繁中字體 -->
+  <!-- Google Fonts: 霸氣硬核、街頭狂放與重磅黑體 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600;800;900&family=Space+Grotesk:wght@500;700;900&family=Noto+Sans+TC:wght@600;800;900&display=swap"
     rel="stylesheet">
 
   <style>
     /* ==========================================================
-       設計系統：清新蔚藍・純白簡約・可愛柔和 (Fresh Azure Minimal White)
+       狂野放蕩不羈設計系統 (Wild & Unruly Dark Navy Cyber-Rebel)
        ========================================================== */
     :root {
-      /* 白色與清爽淡藍底色層次 */
-      --bg-body: #f8fafc;
-      --bg-white: #ffffff;
-      --bg-soft: #f0f7ff;
-      --bg-pill: #e0f2fe;
+      /* 深邃黑夜與極限深藍 */
+      --bg-void: #000000;
+      --bg-dark: #030712;
+      --bg-navy: #050b1a;
+      --bg-card: #081026;
+      --bg-card-hover: #0d1a3d;
 
-      /* 清新蔚藍主題色調 (Modern Fresh Azure & Sky Blue Palette) */
-      --primary-blue: #0284c7;
-      --primary-blue-hover: #0369a1;
-      --primary-blue-light: #38bdf8;
-      --pastel-blue: #0284c7;
-      --pastel-blue-soft: #f0f9ff;
-      --pastel-cyan: #06b6d4;
-      --pastel-cyan-soft: #ecfeff;
-      --pastel-sky: #38bdf8;
-      --pastel-sky-soft: #e0f2fe;
-      --pastel-indigo: #6366f1;
-      --pastel-indigo-soft: #eef2ff;
-      --pastel-green: #10b981;
-      --pastel-green-soft: #f0fdf4;
-      --pastel-yellow: #f59e0b;
-      --pastel-yellow-soft: #fffbeb;
+      /* 狂野霓虹電光藍與深海鈷藍 */
+      --neon-cyan: #00f0ff;
+      --neon-blue: #2563eb;
+      --neon-electric: #38bdf8;
+      --deep-cobalt: #1d4ed8;
+      --dark-blue-glow: rgba(37, 99, 235, 0.45);
+      --cyan-shock-glow: rgba(0, 240, 255, 0.35);
 
-      /* 文字色彩 (溫和沉穩深藍灰) */
-      --text-main: #0f172a;
-      --text-sub: #334155;
-      --text-muted: #64748b;
+      /* 金屬與警戒點綴 */
+      --wild-orange: #ff3b30;
+      --dark-amber: #f59e0b;
+      --toxic-green: #00ff88;
 
-      /* 邊框與圓角 */
-      --border-color: #e2e8f0;
-      --border-cute: #bae6fd;
-      --radius-sm: 12px;
-      --radius-md: 20px;
-      --radius-lg: 28px;
-      --radius-pill: 9999px;
+      /* 銳利金屬文字 */
+      --text-white: #ffffff;
+      --text-silver: #e2e8f0;
+      --text-steel: #94a3b8;
+      --text-dim: #475569;
 
-      /* 棉花糖純白與清爽藍柔和陰影 */
-      --shadow-cute: 0 10px 30px -5px rgba(2, 132, 199, 0.08), 0 4px 12px -2px rgba(148, 163, 184, 0.06);
-      --shadow-hover: 0 18px 36px -6px rgba(2, 132, 199, 0.22), 0 8px 18px -4px rgba(56, 189, 248, 0.16);
-      --shadow-pill: 0 4px 14px rgba(2, 132, 199, 0.08);
+      /* 狂野切角與幾何邊框 */
+      --border-dark: #172554;
+      --border-blue: #1e40af;
+      --border-glow: #3b82f6;
 
-      /* 彈性微動畫 */
-      --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      /* 猛獸光暈與懸浮陰影 */
+      --shadow-neon: 0 0 25px rgba(29, 78, 216, 0.5), 0 0 60px rgba(3, 7, 18, 0.9);
+      --shadow-electric: 0 0 35px rgba(0, 240, 255, 0.35), 0 10px 40px rgba(0, 0, 0, 0.8);
+      --shadow-card: 0 16px 36px -8px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+      /* 爆發力動畫曲線 */
+      --ease-wild: cubic-bezier(0.19, 1, 0.22, 1);
     }
 
-    /* ==========================================================
-       基礎重置與背景裝飾
-       ========================================================== */
     *,
     *::before,
     *::after {
@@ -77,20 +69,23 @@
 
     html {
       scroll-behavior: smooth;
+      background-color: var(--bg-void);
+      color: var(--text-silver);
       font-size: 16px;
     }
 
     body {
-      font-family: 'Nunito', 'M PLUS Rounded 1c', 'Noto Sans TC', -apple-system, sans-serif;
-      background-color: var(--bg-body);
-      color: var(--text-sub);
-      line-height: 1.75;
+      font-family: 'Space Grotesk', 'Noto Sans TC', sans-serif;
+      background: radial-gradient(circle at 50% 0%, #0c1838 0%, #04091a 45%, #000000 100%);
+      color: var(--text-silver);
+      line-height: 1.7;
       overflow-x: hidden;
       position: relative;
+      min-height: 100vh;
     }
 
-    /* 可愛微光雲朵斑點（純白底上的清新蔚藍柔焦） */
-    .cute-bg-elements {
+    /* 狂野暗黑網格與高壓電光背景 */
+    .wild-ambient-grid {
       position: fixed;
       top: 0;
       left: 0;
@@ -98,51 +93,66 @@
       height: 100%;
       pointer-events: none;
       z-index: 0;
-      overflow: hidden;
+      background-image:
+        linear-gradient(rgba(37, 99, 235, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+      background-size: 45px 45px;
+      mask-image: radial-gradient(circle at 50% 30%, black 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(circle at 50% 30%, black 40%, transparent 85%);
     }
 
-    .cute-blob {
+    /* 狂暴暗藍光暴球 */
+    .dark-flare-ball {
       position: absolute;
       border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.6;
-      animation: floatSlow 15s infinite alternate ease-in-out;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+      animation: pulseRage 12s infinite alternate ease-in-out;
     }
 
-    .blob-1 {
-      top: -60px;
-      right: -60px;
-      width: 460px;
-      height: 460px;
-      background: radial-gradient(circle, #bae6fd 0%, transparent 70%);
+    .flare-1 {
+      top: -150px;
+      right: -100px;
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, #1d4ed8 0%, #091330 65%, transparent 100%);
     }
 
-    .blob-2 {
-      bottom: 10%;
-      left: -100px;
+    .flare-2 {
+      bottom: 15%;
+      left: -150px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, #0284c7 0%, #030a20 60%, transparent 100%);
+      animation-delay: -4s;
+    }
+
+    .flare-3 {
+      top: 45%;
+      right: 10%;
       width: 480px;
       height: 480px;
-      background: radial-gradient(circle, #e0f2fe 0%, transparent 70%);
-      animation-delay: -5s;
+      background: radial-gradient(circle, #00f0ff 0%, #050e26 50%, transparent 100%);
+      opacity: 0.18;
+      animation-delay: -8s;
     }
 
-    .blob-3 {
-      top: 48%;
-      right: 5%;
-      width: 330px;
-      height: 330px;
-      background: radial-gradient(circle, #cffafe 0%, transparent 70%);
-      opacity: 0.5;
-      animation-delay: -9s;
-    }
-
-    @keyframes floatSlow {
+    @keyframes pulseRage {
       0% {
-        transform: translateY(0) scale(1) rotate(0deg);
+        transform: scale(0.9) translate(0, 0);
+        opacity: 0.25;
+      }
+
+      50% {
+        transform: scale(1.15) translate(25px, -30px);
+        opacity: 0.42;
       }
 
       100% {
-        transform: translateY(35px) scale(1.08) rotate(10deg);
+        transform: scale(1.02) translate(-20px, 20px);
+        opacity: 0.3;
       }
     }
 
@@ -153,75 +163,90 @@
 
     .container {
       width: 100%;
-      max-width: 1060px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 1.75rem;
       position: relative;
       z-index: 1;
     }
 
-    .section-header {
-      text-align: center;
-      margin-bottom: 3.5rem;
-    }
-
-    .cute-pill-tag {
+    /* 狂放標籤：金屬切角標籤 */
+    .rebel-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      padding: 0.4rem 1.1rem;
-      background: var(--pastel-blue-soft);
-      border: 1.5px solid var(--border-cute);
-      border-radius: var(--radius-pill);
-      font-size: 0.86rem;
+      gap: 0.6rem;
+      padding: 0.45rem 1.3rem;
+      background: rgba(13, 27, 62, 0.85);
+      border: 1px solid var(--neon-blue);
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+      color: var(--neon-cyan);
+      font-family: 'Orbitron', monospace;
+      font-size: 0.85rem;
       font-weight: 800;
-      color: var(--primary-blue);
-      box-shadow: var(--shadow-pill);
-      margin-bottom: 0.85rem;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      box-shadow: 0 0 18px rgba(0, 240, 255, 0.25);
+      margin-bottom: 1.25rem;
+    }
+
+    .rebel-badge .dot-live {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--neon-cyan);
+      box-shadow: 0 0 10px var(--neon-cyan);
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.2;
+      }
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
     }
 
     .section-title {
-      font-size: 2.25rem;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 2.75rem;
       font-weight: 900;
-      color: var(--text-main);
-      letter-spacing: -0.01em;
-      margin-bottom: 0.6rem;
+      color: var(--text-white);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
     }
 
-    .section-title span.blue,
-    .section-title span.pink {
-      color: var(--primary-blue);
+    .section-title span.neon-glow {
+      color: var(--neon-cyan);
+      text-shadow: 0 0 25px rgba(0, 240, 255, 0.65), 0 0 60px rgba(37, 99, 235, 0.4);
       position: relative;
-      display: inline-block;
-    }
-
-    .section-title span.blue::after,
-    .section-title span.pink::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 4px;
-      width: 100%;
-      height: 10px;
-      background: #bae6fd;
-      border-radius: 6px;
-      opacity: 0.6;
-      z-index: -1;
     }
 
     .section-subtitle {
-      color: var(--text-muted);
-      font-size: 1.05rem;
+      color: var(--text-steel);
+      font-size: 1.12rem;
       font-weight: 600;
+      max-width: 640px;
+      margin: 0 auto;
+      letter-spacing: 0.05em;
     }
 
     /* ==========================================================
-       清新藍白懸浮膠囊導覽列 (Floating Pill Navbar)
+       狂暴暗黑導覽列 (Savage Cyber Floating Navbar)
        ========================================================== */
     .navbar {
       position: fixed;
-      top: 1rem;
+      top: 1.2rem;
       left: 0;
       right: 0;
       z-index: 100;
@@ -231,414 +256,487 @@
     }
 
     .nav-inner {
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1.5px solid rgba(186, 230, 253, 0.85);
-      border-radius: var(--radius-pill);
-      padding: 0.6rem 1.5rem;
+      background: rgba(4, 9, 24, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(37, 99, 235, 0.55);
+      clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+      padding: 0.7rem 2.2rem;
       display: flex;
       align-items: center;
-      gap: 2rem;
-      box-shadow: 0 10px 25px -4px rgba(2, 132, 199, 0.1);
-      transition: var(--transition-bounce);
+      gap: 2.2rem;
+      box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.95), 0 0 20px rgba(37, 99, 235, 0.25);
+      transition: all 0.3s var(--ease-wild);
     }
 
     .nav-inner:hover {
-      box-shadow: 0 14px 30px -4px rgba(2, 132, 199, 0.18);
+      border-color: var(--neon-cyan);
+      box-shadow: 0 20px 45px -5px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 240, 255, 0.35);
     }
 
     .nav-brand {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
+      font-family: 'Orbitron', sans-serif;
       font-weight: 900;
-      font-size: 1.15rem;
-      color: var(--text-main);
+      font-size: 1.25rem;
+      color: var(--text-white);
+      letter-spacing: 0.08em;
     }
 
-    .brand-emoji {
-      display: inline-block;
-      animation: wiggle 2.5s infinite ease-in-out;
-      transform-origin: 70% 70%;
+    .brand-lightning {
+      color: var(--neon-cyan);
+      font-size: 1.4rem;
+      filter: drop-shadow(0 0 8px var(--neon-cyan));
+      animation: lightningFlicker 3s infinite;
     }
 
-    @keyframes wiggle {
+    @keyframes lightningFlicker {
 
       0%,
       100% {
+        opacity: 1;
         transform: rotate(0deg);
       }
 
-      20% {
-        transform: rotate(14deg);
+      25% {
+        opacity: 0.8;
+        transform: rotate(-6deg) scale(1.1);
       }
 
-      40% {
-        transform: rotate(-8deg);
+      50% {
+        opacity: 1;
+        transform: rotate(4deg);
       }
 
-      60% {
-        transform: rotate(10deg);
-      }
-
-      80% {
-        transform: rotate(-4deg);
+      75% {
+        opacity: 0.9;
       }
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1.5rem;
       list-style: none;
     }
 
     .nav-link {
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-weight: 700;
-      font-size: 0.92rem;
-      color: var(--text-sub);
-      padding: 0.35rem 0.8rem;
-      border-radius: var(--radius-pill);
-      transition: var(--transition-bounce);
+      font-size: 0.9rem;
+      color: var(--text-steel);
+      padding: 0.4rem 0.85rem;
+      letter-spacing: 0.08em;
+      transition: all 0.25s var(--ease-wild);
+      position: relative;
     }
 
     .nav-link:hover,
     .nav-link.active {
-      color: var(--primary-blue);
-      background: var(--pastel-blue-soft);
+      color: var(--neon-cyan);
+      text-shadow: 0 0 14px var(--neon-cyan);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 10%;
+      width: 0%;
+      height: 2px;
+      background: var(--neon-cyan);
+      box-shadow: 0 0 8px var(--neon-cyan);
+      transition: width 0.3s var(--ease-wild);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 80%;
     }
 
     .nav-cta-btn {
-      padding: 0.48rem 1.2rem;
-      background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-      color: #ffffff;
-      font-weight: 800;
+      padding: 0.55rem 1.4rem;
+      background: linear-gradient(135deg, #1d4ed8 0%, #00f0ff 100%);
+      color: #000000;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 900;
       font-size: 0.88rem;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
-      transition: var(--transition-bounce);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.45);
+      transition: all 0.3s var(--ease-wild);
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.45rem;
     }
 
     .nav-cta-btn:hover {
       transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.45);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.8);
+      filter: brightness(1.15);
     }
 
     .mobile-menu-btn {
       display: none;
       background: none;
-      border: none;
-      font-size: 1.45rem;
+      border: 1px solid var(--border-blue);
+      color: var(--neon-cyan);
+      font-size: 1.5rem;
+      padding: 0.2rem 0.6rem;
       cursor: pointer;
-      color: var(--text-main);
     }
 
     /* ==========================================================
-       HERO 主視覺區 (純白簡約清爽藍)
+       HERO 狂暴主戰場 (Wild Dark Battleground)
        ========================================================== */
     .hero {
-      padding: 9.5rem 0 5rem;
-      min-height: 88vh;
+      padding: 10.5rem 0 6rem;
+      min-height: 92vh;
       display: flex;
       align-items: center;
+      position: relative;
     }
 
     .hero-layout {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.2fr 0.8fr;
       align-items: center;
-      gap: 3.5rem;
-    }
-
-    .hero-cute-greeting {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 1.1rem;
-      background: #f0f9ff;
-      border: 1.5px solid #bae6fd;
-      border-radius: var(--radius-pill);
-      color: #0284c7;
-      font-size: 0.9rem;
-      font-weight: 800;
-      box-shadow: var(--shadow-pill);
-      margin-bottom: 1.25rem;
+      gap: 4rem;
     }
 
     .hero-main-title {
-      font-size: 3.4rem;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 4.2rem;
       font-weight: 900;
-      color: var(--text-main);
-      line-height: 1.2;
-      margin-bottom: 1rem;
+      color: var(--text-white);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.4rem;
+      text-transform: uppercase;
     }
 
-    .hero-name-highlight {
+    .hero-main-title .wild-name {
+      display: block;
+      color: transparent;
+      background: linear-gradient(135deg, #ffffff 15%, #38bdf8 65%, #00f0ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: 0 0 45px rgba(0, 240, 255, 0.45);
       position: relative;
-      color: #0284c7;
-      display: inline-block;
     }
 
-    .hero-name-highlight::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 8px;
-      width: 100%;
-      height: 14px;
-      background: #bae6fd;
-      border-radius: 8px;
-      opacity: 0.6;
-      z-index: -1;
-    }
-
-    /* 「哈哈哈」亮眼簡約引言框 (藍色調設計) */
-    .hero-laugh-bubble {
-      background: #ffffff;
-      border: 2px dashed #7dd3fc;
-      border-radius: var(--radius-md);
-      padding: 1.3rem 1.6rem;
-      margin: 1.4rem 0 1.8rem;
-      box-shadow: var(--shadow-cute);
+    /* 狂放不羈戰吼框：「哈哈哈哈！」 */
+    .hero-rage-quote-box {
+      background: rgba(5, 12, 32, 0.9);
+      border: 2px solid #1e3a8a;
+      border-left: 5px solid var(--neon-cyan);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(37, 99, 235, 0.15);
+      padding: 1.6rem 2rem;
+      margin: 1.8rem 0 2.2rem;
       position: relative;
-      transition: var(--transition-bounce);
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+      transition: all 0.35s var(--ease-wild);
     }
 
-    .hero-laugh-bubble:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-      border-color: #0284c7;
+    .hero-rage-quote-box:hover {
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.35), inset 0 0 35px rgba(0, 240, 255, 0.15);
+      transform: translateY(-4px) skewX(-1deg);
     }
 
-    .laugh-tag {
-      display: inline-flex;
+    .rage-roar-headline {
+      font-family: 'Bebas Neue', 'Noto Sans TC', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--neon-cyan);
+      letter-spacing: 0.08em;
+      display: flex;
       align-items: center;
-      gap: 0.4rem;
-      font-size: 1.65rem;
-      font-weight: 900;
-      color: #0284c7;
-      margin-bottom: 0.3rem;
+      gap: 0.6rem;
+      text-shadow: 0 0 20px rgba(0, 240, 255, 0.75);
+      margin-bottom: 0.4rem;
     }
 
-    .laugh-subtext {
-      color: var(--text-sub);
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.65;
-    }
-
-    .hero-bio {
+    .rage-roar-desc {
+      color: var(--text-silver);
       font-size: 1.08rem;
-      color: var(--text-sub);
-      margin-bottom: 2rem;
-      line-height: 1.8;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .hero-bio-lead {
+      font-size: 1.15rem;
+      color: var(--text-steel);
+      margin-bottom: 2.4rem;
+      line-height: 1.85;
+    }
+
+    .hero-bio-lead strong {
+      color: var(--neon-cyan);
+      font-weight: 800;
     }
 
     .hero-action-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1.4rem;
     }
 
-    .btn-cute-primary {
+    /* 狂野切角主按鈕 */
+    .btn-wild-primary {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.85rem 1.85rem;
-      background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 1rem;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
-      transition: var(--transition-bounce);
+      gap: 0.75rem;
+      padding: 1rem 2.4rem;
+      background: linear-gradient(135deg, #1d4ed8 0%, #00f0ff 100%);
+      color: #000000;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: 0.1em;
+      clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.5), 0 10px 25px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s var(--ease-wild);
       border: none;
       cursor: pointer;
     }
 
-    .btn-cute-primary:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 10px 24px rgba(2, 132, 199, 0.45);
+    .btn-wild-primary:hover {
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 0 45px rgba(0, 240, 255, 0.9), 0 15px 35px rgba(0, 0, 0, 0.8);
+      filter: brightness(1.2);
     }
 
-    .btn-cute-secondary {
+    .btn-wild-secondary {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.85rem 1.85rem;
-      background: #ffffff;
-      color: var(--text-main);
+      gap: 0.75rem;
+      padding: 1rem 2.2rem;
+      background: rgba(8, 16, 38, 0.8);
+      color: var(--text-white);
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-weight: 800;
-      font-size: 1rem;
-      border-radius: var(--radius-pill);
-      border: 1.5px solid var(--border-cute);
-      box-shadow: var(--shadow-pill);
-      transition: var(--transition-bounce);
+      font-size: 1.02rem;
+      letter-spacing: 0.08em;
+      border: 1.5px solid var(--border-blue);
+      clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+      box-shadow: inset 0 0 15px rgba(37, 99, 235, 0.2);
+      transition: all 0.3s var(--ease-wild);
     }
 
-    .btn-cute-secondary:hover {
-      background: #f0f9ff;
+    .btn-wild-secondary:hover {
+      background: rgba(18, 36, 82, 0.9);
+      border-color: var(--neon-cyan);
       transform: translateY(-4px);
-      border-color: #38bdf8;
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
     }
 
-    /* 可愛白色大頭貼卡片 */
-    .hero-avatar-showcase {
+    /* 狂野球員 ID 裝甲卡 (Cyberpunk Streetwear ID Showcase) */
+    .hero-identity-card {
+      position: relative;
       display: flex;
       justify-content: center;
-      position: relative;
     }
 
-    .cute-profile-card {
-      background: #ffffff;
-      border: 2px solid #e0f2fe;
-      border-radius: var(--radius-lg);
-      padding: 2.5rem 2rem 2.2rem;
-      text-align: center;
-      box-shadow: var(--shadow-cute);
+    .tactical-id-box {
       width: 100%;
-      max-width: 330px;
+      max-width: 360px;
+      background: linear-gradient(165deg, #09132e 0%, #03081a 100%);
+      border: 2px solid var(--border-blue);
+      border-top: 4px solid var(--neon-cyan);
+      padding: 2.8rem 2.2rem 2.4rem;
+      text-align: center;
       position: relative;
-      transition: var(--transition-bounce);
+      clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+      box-shadow: var(--shadow-neon);
+      transition: all 0.4s var(--ease-wild);
     }
 
-    .cute-profile-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-hover);
-      border-color: #7dd3fc;
+    .tactical-id-box:hover {
+      transform: translateY(-10px) rotate(-1deg);
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 45px rgba(0, 240, 255, 0.4), 0 20px 45px rgba(0, 0, 0, 0.95);
     }
 
-    .cute-avatar-frame {
-      width: 130px;
-      height: 130px;
-      margin: 0 auto 1.4rem;
-      background: linear-gradient(135deg, #e0f2fe 0%, #7dd3fc 50%, #0ea5e9 100%);
+    /* 四角機械標記 */
+    .tactical-id-box::before {
+      content: '[ ID // VINCENT-01 ]';
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.68rem;
+      color: var(--neon-cyan);
+      letter-spacing: 0.15em;
+    }
+
+    .avatar-halo-frame {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 1.6rem;
+      background: radial-gradient(circle, #0284c7 0%, #03081a 75%);
+      border: 3px solid var(--neon-cyan);
       border-radius: 50%;
       padding: 6px;
-      box-shadow: 0 8px 24px rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6), inset 0 0 20px rgba(0, 240, 255, 0.4);
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .avatar-inner-face {
+    .avatar-beast-face {
       width: 100%;
       height: 100%;
-      background: #ffffff;
+      background: #050d24;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 3.5rem;
+      font-size: 4.2rem;
       user-select: none;
+      filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.6));
+      animation: floatBreath 4s infinite ease-in-out;
     }
 
-    .avatar-floating-tag {
+    @keyframes floatBreath {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08) rotate(3deg);
+      }
+    }
+
+    .avatar-level-badge {
       position: absolute;
       bottom: -6px;
-      right: 0px;
-      background: #0284c7;
-      color: #fff;
+      right: -4px;
+      background: #000000;
+      color: var(--neon-cyan);
+      border: 1.5px solid var(--neon-cyan);
+      font-family: 'Orbitron', sans-serif;
       font-size: 0.78rem;
-      font-weight: 800;
-      padding: 0.25rem 0.65rem;
-      border-radius: var(--radius-pill);
-      border: 2px solid #fff;
-    }
-
-    .cute-card-name {
-      font-size: 1.5rem;
       font-weight: 900;
-      color: var(--text-main);
-      margin-bottom: 0.2rem;
+      padding: 0.3rem 0.75rem;
+      clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+      box-shadow: 0 0 14px var(--neon-cyan);
     }
 
-    .cute-card-sub {
-      color: var(--text-muted);
-      font-size: 0.9rem;
+    .card-rebel-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-rebel-role {
+      font-size: 0.95rem;
+      color: var(--neon-electric);
       font-weight: 700;
-      margin-bottom: 1.25rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
     }
 
-    .cute-quick-badges {
+    .card-wild-tags {
       display: flex;
       justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
+      gap: 0.6rem;
+      margin-bottom: 1.8rem;
     }
 
-    .quick-tag {
-      padding: 0.3rem 0.75rem;
-      border-radius: var(--radius-pill);
+    .tag-savage {
+      padding: 0.35rem 0.9rem;
+      background: rgba(29, 78, 216, 0.25);
+      border: 1px solid var(--border-blue);
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-size: 0.8rem;
       font-weight: 800;
+      color: var(--text-white);
+      clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
     }
 
-    .quick-tag.pink,
-    .quick-tag.blue {
-      background: #e0f2fe;
-      color: #0284c7;
+    .tag-savage.cyan {
+      border-color: var(--neon-cyan);
+      color: var(--neon-cyan);
     }
 
-    .quick-tag.cyan {
-      background: #cffafe;
-      color: #0891b2;
+    .tag-savage.blue {
+      border-color: var(--neon-blue);
+      color: #60a5fa;
     }
 
-    .cute-stats-row {
+    .tactical-stats-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-      padding-top: 1.2rem;
-      border-top: 1.5px dashed #e2e8f0;
+      gap: 1rem;
+      padding-top: 1.4rem;
+      border-top: 1px dashed var(--border-blue);
     }
 
-    .stat-number-cute {
-      font-size: 1.35rem;
+    .stat-val-neon {
+      font-family: 'Bebas Neue', 'Orbitron', sans-serif;
+      font-size: 2.2rem;
+      line-height: 1;
       font-weight: 900;
-      color: var(--text-main);
+      color: var(--neon-cyan);
+      text-shadow: 0 0 15px rgba(0, 240, 255, 0.7);
     }
 
-    .stat-label-cute {
-      font-size: 0.78rem;
-      color: var(--text-muted);
+    .stat-label-cyber {
+      font-size: 0.8rem;
+      color: var(--text-steel);
       font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
     }
 
-    /* 懸浮可愛貼紙 */
-    .float-sticker {
+    /* 裝甲懸浮徽章 */
+    .armor-sticker {
       position: absolute;
-      background: #ffffff;
-      border: 1.5px solid #bae6fd;
-      border-radius: var(--radius-pill);
-      padding: 0.5rem 0.95rem;
-      box-shadow: var(--shadow-cute);
+      background: rgba(3, 7, 20, 0.95);
+      border: 1px solid var(--neon-blue);
+      color: #ffffff;
+      padding: 0.6rem 1.1rem;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-size: 0.85rem;
-      font-weight: 800;
+      font-weight: 900;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      animation: stickerBob 4s infinite ease-in-out;
+      gap: 0.5rem;
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
       z-index: 2;
     }
 
-    .sticker-top {
+    .armor-sticker-top {
       top: -15px;
       left: -20px;
-      color: #0284c7;
-      animation-delay: 0s;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
+      color: var(--neon-cyan);
+      border-color: var(--neon-cyan);
+      animation: hoverBob 5s infinite ease-in-out;
     }
 
-    .sticker-bottom {
+    .armor-sticker-bottom {
       bottom: -15px;
       right: -20px;
-      color: #0369a1;
-      animation-delay: 2s;
+      clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%);
+      color: #38bdf8;
+      border-color: #2563eb;
+      animation: hoverBob 5s infinite ease-in-out -2.5s;
     }
 
-    @keyframes stickerBob {
+    @keyframes hoverBob {
 
       0%,
       100% {
@@ -646,74 +744,79 @@
       }
 
       50% {
-        transform: translateY(-7px);
+        transform: translateY(-8px);
       }
     }
 
     /* ==========================================================
-       關於我 & 1000 片拼圖經歷 (清新白色 Bento Grid)
+       關於我 ＆ 1000 片拼圖戰役 (Savage Bento Warfare)
        ========================================================== */
     .section-about {
-      padding: 5.5rem 0;
+      padding: 7rem 0;
+      position: relative;
     }
 
     .about-cards-grid {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 1.6rem;
+      gap: 1.8rem;
     }
 
-    .cute-box {
-      background: var(--bg-white);
-      border: 1.5px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.2rem;
-      box-shadow: var(--shadow-cute);
-      transition: var(--transition-bounce);
+    .savage-card {
+      background: rgba(6, 14, 36, 0.88);
+      border: 1.5px solid var(--border-dark);
+      padding: 2.5rem;
       position: relative;
+      clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+      box-shadow: var(--shadow-card);
+      transition: all 0.35s var(--ease-wild);
     }
 
-    .cute-box:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-      border-color: #7dd3fc;
+    .savage-card:hover {
+      border-color: var(--neon-cyan);
+      transform: translateY(-6px);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.25), 0 20px 45px rgba(0, 0, 0, 0.95);
+      background: rgba(9, 21, 54, 0.92);
     }
 
-    .box-icon-bubble {
-      width: 52px;
-      height: 52px;
-      border-radius: var(--radius-md);
+    .card-corner-tag {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.72rem;
+      color: var(--neon-cyan);
+      opacity: 0.85;
+      letter-spacing: 0.15em;
+    }
+
+    .savage-icon-box {
+      width: 58px;
+      height: 58px;
+      background: rgba(13, 27, 68, 0.8);
+      border: 1.5px solid var(--neon-blue);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.8rem;
-      margin-bottom: 1.25rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
     }
 
-    .bubble-yellow {
-      background: #e0f2fe;
+    .savage-card-title {
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--text-white);
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.03em;
     }
 
-    .bubble-pink,
-    .bubble-blue {
-      background: #e0f2fe;
-    }
-
-    .bubble-green {
-      background: #dcfce7;
-    }
-
-    .box-title {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--text-main);
-      margin-bottom: 0.65rem;
-    }
-
-    .box-desc {
-      color: var(--text-sub);
-      font-size: 0.98rem;
-      line-height: 1.75;
+    .savage-card-desc {
+      color: var(--text-steel);
+      font-size: 1.02rem;
+      line-height: 1.85;
     }
 
     .col-7 {
@@ -728,42 +831,43 @@
       grid-column: span 4;
     }
 
-    /* 1000片拼圖進度條 */
-    .puzzle-cute-meter {
-      margin-top: 1.5rem;
-      background: #f8fafc;
-      border: 1.5px solid #e2e8f0;
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
+    /* 1000 片拼圖雷射充能槽 */
+    .puzzle-warfare-meter {
+      margin-top: 1.8rem;
+      background: rgba(3, 7, 18, 0.95);
+      border: 1.5px solid var(--border-blue);
+      padding: 1.4rem;
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
     }
 
-    .puzzle-meter-header {
+    .puzzle-meter-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-family: 'Orbitron', sans-serif;
       font-weight: 800;
-      font-size: 0.9rem;
-      margin-bottom: 0.6rem;
+      font-size: 0.92rem;
+      margin-bottom: 0.75rem;
     }
 
-    .puzzle-track {
+    .puzzle-laser-track {
       width: 100%;
-      height: 14px;
-      background: #e2e8f0;
-      border-radius: var(--radius-pill);
+      height: 16px;
+      background: #020617;
+      border: 1px solid var(--border-dark);
       overflow: hidden;
       position: relative;
     }
 
-    .puzzle-fill {
+    .puzzle-laser-fill {
       height: 100%;
       width: 100%;
-      background: linear-gradient(90deg, #38bdf8 0%, #0284c7 100%);
-      border-radius: var(--radius-pill);
-      animation: fillPuzzle 1.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      background: linear-gradient(90deg, #1d4ed8 0%, #2563eb 50%, #00f0ff 100%);
+      box-shadow: 0 0 25px var(--neon-cyan);
+      animation: laserCharge 2s var(--ease-wild) forwards;
     }
 
-    @keyframes fillPuzzle {
+    @keyframes laserCharge {
       0% {
         width: 0%;
       }
@@ -773,307 +877,336 @@
       }
     }
 
-    .puzzle-traits {
+    .puzzle-wild-traits {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 0.85rem;
+      gap: 0.7rem;
+      margin-top: 1.1rem;
     }
 
-    .trait-pill {
+    .trait-badge-cyber {
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-size: 0.8rem;
-      font-weight: 700;
-      padding: 0.25rem 0.65rem;
-      border-radius: var(--radius-pill);
-      background: #fff;
-      border: 1px solid #bae6fd;
-      color: var(--primary-blue);
+      font-weight: 800;
+      padding: 0.35rem 0.85rem;
+      background: rgba(13, 27, 62, 0.7);
+      border: 1px solid var(--neon-blue);
+      color: var(--neon-cyan);
+      letter-spacing: 0.05em;
     }
 
     /* ==========================================================
-       排球技能專區 (Volleyball Skill Show)
+       排球狂暴殺招專區 (Volleyball Savage Athletics)
        ========================================================== */
     .section-skills {
-      padding: 5.5rem 0;
-      background: #ffffff;
-      border-top: 1.5px solid #e2e8f0;
-      border-bottom: 1.5px solid #e2e8f0;
+      padding: 7rem 0;
+      background: linear-gradient(180deg, #020617 0%, #060e29 50%, #020617 100%);
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+      position: relative;
     }
 
     .skills-cards-wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 1.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 2rem;
     }
 
-    .skill-cute-card {
-      background: var(--bg-body);
-      border: 1.5px solid #e2e8f0;
-      border-radius: var(--radius-lg);
-      padding: 2.2rem 2rem;
-      box-shadow: var(--shadow-cute);
-      transition: var(--transition-bounce);
+    .skill-savage-box {
+      background: rgba(5, 11, 28, 0.95);
+      border: 1.5px solid var(--border-dark);
+      padding: 2.5rem 2.2rem;
+      clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+      box-shadow: var(--shadow-card);
+      transition: all 0.35s var(--ease-wild);
     }
 
-    .skill-cute-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-      border-color: #38bdf8;
-      background: #ffffff;
+    .skill-savage-box:hover {
+      border-color: var(--neon-cyan);
+      transform: translateY(-6px);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.3);
     }
 
-    .skill-top-bar {
+    .skill-header-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
     }
 
     .skill-title-group {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.85rem;
     }
 
-    .skill-badge-soft {
-      padding: 0.25rem 0.75rem;
-      background: #e0f2fe;
-      color: #0284c7;
-      font-weight: 800;
-      font-size: 0.75rem;
-      border-radius: var(--radius-pill);
+    .skill-badge-rebel {
+      font-family: 'Orbitron', sans-serif;
+      padding: 0.3rem 0.9rem;
+      background: rgba(37, 99, 235, 0.25);
+      border: 1px solid var(--neon-cyan);
+      color: var(--neon-cyan);
+      font-weight: 900;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
     }
 
-    .skill-bar-unit {
-      margin-bottom: 1.35rem;
+    .skill-row-unit {
+      margin-bottom: 1.5rem;
     }
 
-    .skill-bar-unit:last-child {
+    .skill-row-unit:last-child {
       margin-bottom: 0;
     }
 
-    .skill-info-row {
+    .skill-label-row {
       display: flex;
       justify-content: space-between;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-weight: 800;
-      font-size: 0.92rem;
-      color: var(--text-main);
-      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+      color: var(--text-white);
+      margin-bottom: 0.45rem;
     }
 
-    .cute-progress-bar {
-      height: 10px;
-      background: #e2e8f0;
-      border-radius: var(--radius-pill);
+    .skill-percent-neon {
+      color: var(--neon-cyan);
+      text-shadow: 0 0 10px var(--neon-cyan);
+    }
+
+    .laser-progress-bar {
+      height: 12px;
+      background: #020617;
+      border: 1px solid var(--border-dark);
+      position: relative;
       overflow: hidden;
     }
 
-    .cute-progress-inner {
+    .laser-progress-inner {
       height: 100%;
-      border-radius: var(--radius-pill);
-      transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      background: linear-gradient(90deg, #1e40af 0%, #2563eb 50%, #00f0ff 100%);
+      box-shadow: 0 0 15px var(--neon-cyan);
+      transition: width 1.4s var(--ease-wild);
     }
 
     /* ==========================================================
-       愛好展示：打球 & 玩遊戲 (Hobbies)
+       愛好狂潮：打球 ＆ 遊戲戰場 (Warzone & Arena)
        ========================================================== */
     .section-hobbies {
-      padding: 5.5rem 0;
+      padding: 7rem 0;
     }
 
     .hobbies-dual-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 2.2rem;
     }
 
-    .hobby-card-cute {
-      background: #ffffff;
-      border: 1.5px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 2.4rem;
-      box-shadow: var(--shadow-cute);
+    .hobby-warzone-card {
+      background: rgba(6, 14, 36, 0.9);
+      border: 1.5px solid var(--border-dark);
+      padding: 2.8rem;
       position: relative;
       overflow: hidden;
-      transition: var(--transition-bounce);
+      clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+      box-shadow: var(--shadow-card);
+      transition: all 0.35s var(--ease-wild);
     }
 
-    .hobby-card-cute:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-hover);
-      border-color: #7dd3fc;
+    .hobby-warzone-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 45px rgba(0, 240, 255, 0.3);
     }
 
-    .hobby-watermark-icon {
+    .hobby-shadow-icon {
       position: absolute;
-      right: -15px;
-      bottom: -20px;
-      font-size: 7.5rem;
-      opacity: 0.08;
+      right: -25px;
+      bottom: -30px;
+      font-size: 9.5rem;
+      opacity: 0.05;
       pointer-events: none;
-      transition: transform 0.4s ease;
+      transition: all 0.5s var(--ease-wild);
     }
 
-    .hobby-card-cute:hover .hobby-watermark-icon {
-      transform: scale(1.15) rotate(8deg);
-      opacity: 0.14;
+    .hobby-warzone-card:hover .hobby-shadow-icon {
+      transform: scale(1.15) rotate(10deg);
+      opacity: 0.12;
+      filter: drop-shadow(0 0 30px var(--neon-cyan));
     }
 
-    .cute-tag-cloud {
+    .cyber-chip-cloud {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
+      gap: 0.65rem;
+      margin-top: 1.8rem;
     }
 
-    .hobby-chip {
-      padding: 0.35rem 0.85rem;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: var(--radius-pill);
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--text-sub);
-      transition: var(--transition-bounce);
+    .cyber-chip {
+      padding: 0.45rem 1rem;
+      background: rgba(2, 6, 23, 0.9);
+      border: 1px solid var(--border-blue);
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: var(--text-steel);
+      clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+      transition: all 0.25s var(--ease-wild);
     }
 
-    .hobby-chip:hover {
-      background: #e0f2fe;
-      color: #0284c7;
-      border-color: #bae6fd;
-      transform: translateY(-2px);
+    .cyber-chip:hover {
+      background: rgba(37, 99, 235, 0.3);
+      color: var(--neon-cyan);
+      border-color: var(--neon-cyan);
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
     }
 
     /* ==========================================================
-       趣味「哈哈哈」正能量補充站 (Cute Interactive Generator)
+       狂傲能量戰吼控制台 (Savage Roar Command Station)
        ========================================================== */
     .section-interactive {
-      padding: 5.5rem 0;
+      padding: 7rem 0;
     }
 
-    .interactive-white-card {
-      background: #ffffff;
-      border: 2px dashed #7dd3fc;
-      border-radius: var(--radius-lg);
-      padding: 3.5rem 2rem;
+    .roar-command-console {
+      background: radial-gradient(circle at 50% 0%, #0d1f4d 0%, #03081a 75%);
+      border: 2px solid var(--neon-blue);
+      box-shadow: 0 0 50px rgba(37, 99, 235, 0.35), 0 25px 60px rgba(0, 0, 0, 0.95);
+      padding: 4rem 2.5rem;
       text-align: center;
-      box-shadow: 0 15px 35px -5px rgba(2, 132, 199, 0.12);
       position: relative;
+      clip-path: polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px);
     }
 
-    .quote-display-bubble {
-      background: #f0f9ff;
-      border: 1.5px solid #bae6fd;
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      margin: 2rem auto;
-      max-width: 620px;
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #0369a1;
-      min-height: 85px;
+    .roar-display-screen {
+      background: rgba(2, 6, 23, 0.95);
+      border: 1.5px solid var(--neon-cyan);
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.25), inset 0 0 35px rgba(0, 240, 255, 0.1);
+      padding: 1.8rem 2rem;
+      margin: 2.2rem auto;
+      max-width: 720px;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #ffffff;
+      min-height: 95px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: var(--shadow-pill);
+      text-shadow: 0 0 15px rgba(0, 240, 255, 0.7);
       transition: all 0.3s ease;
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
     }
 
-    .btn-laugh-energy {
-      padding: 1rem 2.5rem;
-      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
-      color: #ffffff;
+    .btn-fire-roar {
+      padding: 1.2rem 3.2rem;
+      background: linear-gradient(135deg, #2563eb 0%, #00f0ff 100%);
+      color: #000000;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
       font-weight: 900;
-      font-size: 1.1rem;
-      border-radius: var(--radius-pill);
+      font-size: 1.25rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      clip-path: polygon(16px 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
       border: none;
       cursor: pointer;
-      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
-      transition: var(--transition-bounce);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.6), 0 10px 30px rgba(0, 0, 0, 0.8);
+      transition: all 0.3s var(--ease-wild);
     }
 
-    .btn-laugh-energy:hover {
-      transform: scale(1.06) rotate(-1deg);
-      box-shadow: 0 10px 28px rgba(2, 132, 199, 0.45);
+    .btn-fire-roar:hover {
+      transform: scale(1.08) rotate(-1deg);
+      box-shadow: 0 0 55px rgba(0, 240, 255, 1);
+      filter: brightness(1.2);
     }
 
-    .btn-laugh-energy:active {
+    .btn-fire-roar:active {
       transform: scale(0.96);
     }
 
-    .laugh-count-text {
-      margin-top: 1.25rem;
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      font-weight: 700;
+    .roar-counter-text {
+      margin-top: 1.5rem;
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 1.05rem;
+      color: var(--text-steel);
+      font-weight: 800;
+      letter-spacing: 0.08em;
     }
 
     /* ==========================================================
-       聯絡我 Contact Section
+       聯絡我 戰術通訊 (Contact Tactical Console)
        ========================================================== */
     .section-contact {
-      padding: 5.5rem 0 7rem;
+      padding: 7rem 0 8.5rem;
     }
 
-    .contact-cute-box {
-      background: #ffffff;
-      border: 1.5px solid #bae6fd;
-      border-radius: var(--radius-lg);
-      padding: 3.5rem 2rem;
+    .contact-cyber-box {
+      background: rgba(5, 12, 32, 0.95);
+      border: 2px solid var(--border-blue);
+      border-top: 4px solid var(--neon-cyan);
+      padding: 4rem 2.5rem;
       text-align: center;
-      max-width: 720px;
+      max-width: 780px;
       margin: 0 auto;
-      box-shadow: var(--shadow-cute);
-      transition: var(--transition-bounce);
+      clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+      box-shadow: var(--shadow-neon);
+      transition: all 0.35s var(--ease-wild);
     }
 
-    .contact-cute-box:hover {
-      border-color: #38bdf8;
-      box-shadow: var(--shadow-hover);
+    .contact-cyber-box:hover {
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 45px rgba(0, 240, 255, 0.35);
     }
 
-    .contact-title {
-      font-size: 2.1rem;
+    .contact-war-title {
+      font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
+      font-size: 2.4rem;
       font-weight: 900;
-      color: var(--text-main);
-      margin-bottom: 0.8rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
     }
 
     .contact-buttons-row {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 1.2rem;
-      margin-top: 2rem;
+      gap: 1.4rem;
+      margin-top: 2.4rem;
     }
 
     /* ==========================================================
        頁尾 Footer
        ========================================================== */
     .footer {
-      border-top: 1.5px solid #e2e8f0;
-      background: #ffffff;
-      padding: 2.5rem 0;
+      border-top: 1px solid var(--border-dark);
+      background: #000000;
+      padding: 3rem 0;
       text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      font-weight: 600;
+      color: var(--text-steel);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
     }
 
-    .back-top-cute {
+    .back-top-rebel {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      color: var(--primary-blue);
+      gap: 0.5rem;
+      color: var(--neon-cyan);
       cursor: pointer;
-      font-weight: 800;
-      margin-top: 0.5rem;
-      transition: var(--transition-bounce);
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 900;
+      font-size: 0.95rem;
+      margin-top: 0.8rem;
+      letter-spacing: 0.1em;
+      transition: all 0.3s var(--ease-wild);
     }
 
-    .back-top-cute:hover {
-      transform: translateY(-3px);
-      color: var(--primary-blue-hover);
+    .back-top-rebel:hover {
+      transform: translateY(-4px);
+      text-shadow: 0 0 15px var(--neon-cyan);
     }
 
     /* ==========================================================
@@ -1081,8 +1214,8 @@
        ========================================================== */
     .reveal {
       opacity: 0;
-      transform: translateY(32px);
-      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(35px);
+      transition: opacity 0.85s var(--ease-wild), transform 0.85s var(--ease-wild);
       will-change: opacity, transform;
     }
 
@@ -1100,21 +1233,25 @@
     }
 
     /* ==========================================================
-       響應式設計 (手機與電腦皆美觀自適應)
+       響應式設計 (Mobile Responsive)
        ========================================================== */
     @media (max-width: 900px) {
       .hero-layout {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 3rem;
+        gap: 3.5rem;
       }
 
-      .hero-laugh-bubble {
-        text-align: left;
+      .hero-main-title {
+        font-size: 3.2rem;
       }
 
       .hero-action-buttons {
         justify-content: center;
+      }
+
+      .hero-rage-quote-box {
+        text-align: left;
       }
 
       .about-cards-grid {
@@ -1134,7 +1271,7 @@
 
     @media (max-width: 768px) {
       .hero-main-title {
-        font-size: 2.75rem;
+        font-size: 2.6rem;
       }
 
       .navbar {
@@ -1155,13 +1292,12 @@
         left: 0;
         right: 0;
         margin-top: 0.5rem;
-        background: #ffffff;
-        border: 1.5px solid var(--border-cute);
-        border-radius: var(--radius-md);
+        background: rgba(3, 7, 22, 0.98);
+        border: 1px solid var(--neon-blue);
         flex-direction: column;
-        padding: 1rem;
-        gap: 0.8rem;
-        box-shadow: var(--shadow-cute);
+        padding: 1.2rem;
+        gap: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.95);
       }
 
       .nav-links.open {
@@ -1181,111 +1317,110 @@
 
 <body>
 
-  <!-- 可愛白色與清爽蔚藍微光背景 -->
-  <div class="cute-bg-elements">
-    <div class="cute-blob blob-1"></div>
-    <div class="cute-blob blob-2"></div>
-    <div class="cute-blob blob-3"></div>
-  </div>
+  <!-- 暗黑雷射網格與光暈環境 -->
+  <div class="wild-ambient-grid"></div>
+  <div class="dark-flare-ball flare-1"></div>
+  <div class="dark-flare-ball flare-2"></div>
+  <div class="dark-flare-ball flare-3"></div>
 
-  <!-- 頂部圓角膠囊導覽列 -->
+  <!-- 頂部狂野暗黑浮動導覽列 -->
   <header class="navbar">
     <nav class="nav-inner">
       <a href="#hero" class="nav-brand">
-        <span class="brand-emoji">✨</span>
-        <span>劉恒淯 <span style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">Vincent</span></span>
+        <span class="brand-lightning">⚡</span>
+        <span>VINCENT <span style="font-weight: 500; font-size: 0.85rem; color: var(--neon-cyan);">// 狂</span></span>
       </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="nav-link active">首頁</a></li>
-        <li><a href="#about" class="nav-link">關於我</a></li>
-        <li><a href="#skills" class="nav-link">排球技能</a></li>
-        <li><a href="#hobbies" class="nav-link">生活愛好</a></li>
-        <li><a href="#interactive" class="nav-link">哈哈哈能量</a></li>
-        <li><a href="#contact" class="nav-link">聯絡我</a></li>
+        <li><a href="#hero" class="nav-link active">主戰場</a></li>
+        <li><a href="#about" class="nav-link">狂徒生平</a></li>
+        <li><a href="#skills" class="nav-link">狂暴殺招</a></li>
+        <li><a href="#hobbies" class="nav-link">廝殺領域</a></li>
+        <li><a href="#interactive" class="nav-link">戰吼發射台</a></li>
+        <li><a href="#contact" class="nav-link">下戰帖</a></li>
       </ul>
 
-      <a href="#contact" class="nav-cta-btn">Say Hi 💬</a>
+      <a href="#contact" class="nav-cta-btn">CALL ME ⚡</a>
       <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="打開目錄">☰</button>
     </nav>
   </header>
 
   <main>
     <!-- ==========================================================
-         HERO SECTION (純白簡約清新蔚藍主視覺)
+         HERO SECTION (狂野主戰場)
          ========================================================== -->
     <section class="hero" id="hero">
       <div class="container">
         <div class="hero-layout">
 
-          <!-- 左側文字 -->
+          <!-- 左側宣告文字 -->
           <div class="hero-text-side reveal">
-            <div class="hero-cute-greeting">
-              <span>🌊</span> 嗨！歡迎來到我的個人小天地
+            <div class="rebel-badge">
+              <span class="dot-live"></span> UNCHAINED // 狂暴不羈
             </div>
 
             <h1 class="hero-main-title">
-              我是 <span class="hero-name-highlight">劉恒淯 Vincent</span>
+              我是 <span class="wild-name">劉恒淯 VINCENT</span>
             </h1>
 
-            <!-- 一句話介紹自己：「哈哈哈」 -->
-            <div class="hero-laugh-bubble">
-              <div class="laugh-tag">
-                <span>😆</span> 「哈哈哈」
+            <!-- 狂人哲學：「哈哈哈哈！」 -->
+            <div class="hero-rage-quote-box">
+              <div class="rage-roar-headline">
+                <span>🔥</span> 「哈哈哈哈！」
               </div>
-              <p class="laugh-subtext">
-                這是我面對生活與未知的神奇魔法咒語！用笑聲撫平焦慮，用開朗擊碎難關。只要保持微笑，球一定能救得到！
+              <p class="rage-roar-desc">
+                天生狂徒，老子這輩子就沒在怕輸！面對暴風雨不用躲，大笑三聲直接正面硬剛。只要我還在笑，全世界都得為我讓路！
               </p>
             </div>
 
-            <p class="hero-bio">
-              熱愛在排球場上盡情奔跑救球，沉迷於遊戲世界的策略挑戰；同時也是能靜下心完成 <strong>1000 片拼圖</strong> 的耐心大師！
+            <p class="hero-bio-lead">
+              球場上的<strong>狂暴重扣破壞者</strong>，虛擬遊戲世界的<strong>戰術統治者</strong>；更是能冷血耐著性子踏平 <strong>1000 片混沌拼圖</strong> 的狂傲征服者！
             </p>
 
             <div class="hero-action-buttons">
-              <a href="#skills" class="btn-cute-primary">
-                <span>🏐</span> 看我的排球特質
+              <a href="#skills" class="btn-wild-primary">
+                <span>🏐</span> 檢閱排球殺招
               </a>
-              <a href="#about" class="btn-cute-secondary">
-                <span>🧩</span> 探索 1000 片拼圖
+              <a href="#about" class="btn-wild-secondary">
+                <span>🧩</span> 踏平 1000 片拼圖戰役
               </a>
             </div>
           </div>
 
-          <!-- 右側可愛卡片 -->
-          <div class="hero-avatar-showcase reveal reveal-delay-2">
+          <!-- 右側戰術狂野球員 ID 裝甲卡 -->
+          <div class="hero-identity-card reveal reveal-delay-2">
 
-            <div class="float-sticker sticker-top">
-              <span>🏐</span> 排球熱血隊友
+            <div class="armor-sticker armor-sticker-top">
+              <span>🏐</span> 扣殺支配者
             </div>
-            <div class="float-sticker sticker-bottom">
-              <span>🧩</span> 1000 片拼圖達人
+            <div class="armor-sticker armor-sticker-bottom">
+              <span>🧩</span> 千片征服狂
             </div>
 
-            <div class="cute-profile-card">
-              <div class="cute-avatar-frame">
-                <div class="avatar-inner-face">
-                  <span>😊</span>
+            <div class="tactical-id-box">
+              <div class="avatar-halo-frame">
+                <div class="avatar-beast-face">
+                  <span>🐺</span>
                 </div>
-                <div class="avatar-floating-tag">⚡ 活力滿點</div>
+                <div class="avatar-level-badge">LV.999 狂徒</div>
               </div>
 
-              <h2 class="cute-card-name">劉恒淯 (Vincent)</h2>
-              <p class="cute-card-sub">開朗樂天派・排球熱血玩家</p>
+              <h2 class="card-rebel-name">劉恒淯 (Vincent)</h2>
+              <p class="card-rebel-role">放蕩不羈 // 球場狂將</p>
 
-              <div class="cute-quick-badges">
-                <span class="quick-tag blue">🏐 愛排球</span>
-                <span class="quick-tag blue">🎮 愛玩遊戲</span>
+              <div class="card-wild-tags">
+                <span class="tag-savage cyan">🏐 野性排球</span>
+                <span class="tag-savage blue">🎮 狂暴電競</span>
               </div>
 
-              <div class="cute-stats-row">
+              <div class="tactical-stats-row">
                 <div>
-                  <div class="stat-number-cute" style="color: #0284c7;">1000+</div>
-                  <div class="stat-label-cute">拼圖耐心碎片</div>
+                  <div class="stat-val-neon">1000+</div>
+                  <div class="stat-label-cyber">千片混沌踩碎</div>
                 </div>
                 <div>
-                  <div class="stat-number-cute" style="color: #0ea5e9;">100%</div>
-                  <div class="stat-label-cute">歡樂正能量</div>
+                  <div class="stat-val-neon">MAX</div>
+                  <div class="stat-label-cyber">狂暴戰鬥力</div>
                 </div>
               </div>
             </div>
@@ -1297,84 +1432,89 @@
     </section>
 
     <!-- ==========================================================
-         ABOUT ME & 1000 片拼圖經歷 (清新白色 Bento Grid)
+         ABOUT ME & 1000 片拼圖戰役 (狂傲 Bento Grid)
          ========================================================== -->
     <section class="section-about" id="about">
       <div class="container">
 
         <div class="section-header reveal">
-          <div class="cute-pill-tag">ABOUT ME</div>
-          <h2 class="section-title">關於我：<span class="blue">動靜皆宜的特質</span></h2>
-          <p class="section-subtitle">能沉靜一下午拼完千片拼圖，也能在排球場上飛撲救球！</p>
+          <div class="rebel-badge">SAVAGE ORIGINS</div>
+          <h2 class="section-title">狂徒生平：<span class="neon-glow">動靜皆可弒神</span></h2>
+          <p class="section-subtitle">能沉寂如深海冰封千片碎片，也能在哨響瞬間如野獸暴走制霸全場！</p>
         </div>
 
         <div class="about-cards-grid">
 
-          <!-- 1000 片拼圖精選 (Span 7) -->
-          <div class="cute-box col-7 reveal">
-            <div class="box-icon-bubble bubble-yellow">🧩</div>
-            <h3 class="box-title">代表事蹟：挑戰並完成「1000 片拼圖」</h3>
-            <p class="box-desc">
-              拼圖是訓練專注力與極限耐心的最好方式。1000 片看似眼花繚亂，但只要從邊框分類、色系漸層開始，一步步推敲空間邏輯，就能完成宏偉全貌！
-              這讓我學會：<strong>「即使再龐大的挑戰，只要耐著性子拆解，一片片放對位置，就一定能破關！」</strong>
+          <!-- 1000 片拼圖史詩戰役 (Span 7) -->
+          <div class="savage-card col-7 reveal">
+            <span class="card-corner-tag">[ BATTLE // PUZZLE-1000 ]</span>
+            <div class="savage-icon-box">🧩</div>
+            <h3 class="savage-card-title">傳奇戰績：撕裂並降伏「1000 片拼圖」</h3>
+            <p class="savage-card-desc">
+              1000 片碎片看似漫天混沌，但在野性獵手的眼中，那只是等待被撕開的獵物。從邊界封鎖、色系裂解到空間定位，一片片親手踏平！
+              這證明了：<strong>「再龐大兇險的難關，只要盯緊獵物拆解到底，全盤皆由我說了算！」</strong>
             </p>
 
-            <div class="puzzle-cute-meter">
-              <div class="puzzle-meter-header">
-                <span>🎯 挑戰成果進度</span>
-                <span style="color: #0284c7;">1,000 / 1,000 片 (完美完賽 100%)</span>
+            <div class="puzzle-warfare-meter">
+              <div class="puzzle-meter-top">
+                <span>⚡ 征服進度條 // 100% 絕對壓制</span>
+                <span style="color: var(--neon-cyan);">1,000 / 1,000 片 (完勝通關)</span>
               </div>
-              <div class="puzzle-track">
-                <div class="puzzle-fill"></div>
+              <div class="puzzle-laser-track">
+                <div class="puzzle-laser-fill"></div>
               </div>
-              <div class="puzzle-traits">
-                <span class="trait-pill">✓ 超凡專注力</span>
-                <span class="trait-pill">✓ 細微色差觀察</span>
-                <span class="trait-pill">✓ 抗挫折耐心</span>
-                <span class="trait-pill">✓ 宏觀大局建構</span>
+              <div class="puzzle-wild-traits">
+                <span class="trait-badge-cyber">✓ 掠食級專注力</span>
+                <span class="trait-badge-cyber">✓ 鷹眼微光洞察</span>
+                <span class="trait-badge-cyber">✓ 鋼鐵耐挫意志</span>
+                <span class="trait-badge-cyber">✓ 宏觀破局支配</span>
               </div>
             </div>
           </div>
 
-          <!-- 座右銘：哈哈哈 (Span 5) -->
-          <div class="cute-box col-5 reveal reveal-delay-1">
-            <div class="box-icon-bubble bubble-blue">😄</div>
-            <h3 class="box-title">核心信念：哈哈哈</h3>
-            <p class="box-desc">
-              「哈哈哈」不是敷衍，而是我最真誠的樂天哲學！遇到掉球失誤，笑三個字重新深呼吸；遇到生活卡關，用笑聲給身邊的人打氣！
+          <!-- 座右銘：哈哈哈哈 (Span 5) -->
+          <div class="savage-card col-5 reveal reveal-delay-1">
+            <span class="card-corner-tag">[ MENTALITY // ROAR ]</span>
+            <div class="savage-icon-box">⚡</div>
+            <h3 class="savage-card-title">狂傲座右銘：哈哈哈哈！</h3>
+            <p class="savage-card-desc">
+              「笑」是狂徒最致命的反擊！比分落後？失誤掉球？仰天大笑三個字，深吸一口氣，反手就是一個暴扣！生活卡關？老子笑看一切挫敗，沒什麼能奪走我的野心！
             </p>
             <div
-              style="margin-top: 1.25rem; padding: 1rem 1.2rem; background: #f0f9ff; border-radius: var(--radius-sm); border-left: 3px solid #0284c7;">
-              <p style="font-size: 0.92rem; color: #0369a1; font-weight: 700;">
-                「只要還能笑得出來，就沒有跨不過去的坎！」
+              style="margin-top: 1.5rem; padding: 1.2rem 1.4rem; background: rgba(3, 7, 24, 0.95); border: 1.5px solid var(--neon-blue); border-left: 4px solid var(--neon-cyan);">
+              <p style="font-size: 1.02rem; color: var(--neon-cyan); font-weight: 800; font-family: 'Orbitron', sans-serif;">
+                「只要老子還在狂笑，就沒人能判我輸！」
               </p>
             </div>
           </div>
 
-          <!-- 特質 1: 動靜皆宜 (Span 4) -->
-          <div class="cute-box col-4 reveal">
-            <div class="box-icon-bubble bubble-blue">⚡</div>
-            <h3 class="box-title">動靜平衡</h3>
-            <p class="box-desc">
-              拼圖時極致沉著，球場上熱血爆發！能在不同場景切換最佳狀態。
+          <!-- 特質 1: 動如暴狼・靜如磐石 (Span 4) -->
+          <div class="savage-card col-4 reveal">
+            <span class="card-corner-tag">[ TRAIT // 01 ]</span>
+            <div class="savage-icon-box">🐺</div>
+            <h3 class="savage-card-title">動靜極端掌控</h3>
+            <p class="savage-card-desc">
+              千片拼圖前是冷血冰封的沉思者，踏上球場瞬間化身嗜血猛獸，兩種極端自如切換！
             </p>
           </div>
 
-          <!-- 特質 2: 團隊夥伴 (Span 4) -->
-          <div class="cute-box col-4 reveal reveal-delay-1">
-            <div class="box-icon-bubble bubble-green">🤝</div>
-            <h3 class="box-title">氣氛開心果</h3>
-            <p class="box-desc">
-              天生自帶親和力，能快速化解尷尬氣氛，在團隊中是最值得信賴的開心夥伴。
+          <!-- 特質 2: 點燃全場士氣狂潮 (Span 4) -->
+          <div class="savage-card col-4 reveal reveal-delay-1">
+            <span class="card-corner-tag">[ TRAIT // 02 ]</span>
+            <div class="savage-icon-box">🔥</div>
+            <h3 class="savage-card-title">氣場引爆引擎</h3>
+            <p class="savage-card-desc">
+              天生自帶狂野氣場與幽默感染力，用狂放笑聲踏碎尷尬與焦慮，直接把隊友血壓拉滿！
             </p>
           </div>
 
-          <!-- 特質 3: 好奇進化 (Span 4) -->
-          <div class="cute-box col-4 reveal reveal-delay-2">
-            <div class="box-icon-bubble bubble-yellow">🚀</div>
-            <h3 class="box-title">熱愛學習新挑戰</h3>
-            <p class="box-desc">
-              不管是新排球戰術、新遊戲關卡還是未解之謎，都充滿躍躍欲試的熱情！
+          <!-- 特質 3: 狂熱征服未知 (Span 4) -->
+          <div class="savage-card col-4 reveal reveal-delay-2">
+            <span class="card-corner-tag">[ TRAIT // 03 ]</span>
+            <div class="savage-icon-box">⚡</div>
+            <h3 class="savage-card-title">無懼任何規則</h3>
+            <p class="savage-card-desc">
+              新球術？地獄級遊戲關卡？未解迷局？凡未被征服的一切，只會激發我狂野撲上去撕裂的熱血！
             </p>
           </div>
 
@@ -1384,131 +1524,123 @@
     </section>
 
     <!-- ==========================================================
-         排球技能專區 (Volleyball Skill Show)
+         排球狂暴殺招專區 (Volleyball Savage Athletics)
          ========================================================== -->
     <section class="section-skills" id="skills">
       <div class="container">
 
         <div class="section-header reveal">
-          <div class="cute-pill-tag">SKILLS & ATHLETICS</div>
-          <h2 class="section-title">擅長與目標技能：<span class="blue">排球 (Volleyball)</span></h2>
-          <p class="section-subtitle">「不讓球落地」是排球最浪漫的堅持，也是六人一心信任的體現！</p>
+          <div class="rebel-badge">VOLLEYBALL DOMINATION</div>
+          <h2 class="section-title">戰鬥殺招：<span class="neon-glow">空中獵殺・死守不墜</span></h2>
+          <p class="section-subtitle">「球沒落地，老子就不准比賽結束！」這是在地心引力面前最放肆的狂妄！</p>
         </div>
 
         <div class="skills-cards-wrapper">
 
           <!-- 排球專項卡片 -->
-          <div class="skill-cute-card reveal">
-            <div class="skill-top-bar">
+          <div class="skill-savage-box reveal">
+            <div class="skill-header-row">
               <div class="skill-title-group">
                 <span style="font-size: 2.2rem;">🏐</span>
                 <div>
-                  <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">排球專項技能</h3>
-                  <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">熱血練習中</span>
+                  <h3 style="font-size: 1.35rem; font-family: 'Orbitron', sans-serif; font-weight: 900; color: #ffffff;">排球狂暴專項</h3>
+                  <span style="font-size: 0.85rem; color: var(--neon-cyan); font-weight: 700;">球場野獸型打法</span>
                 </div>
               </div>
-              <span class="skill-badge-soft">核心運動</span>
+              <span class="skill-badge-rebel">CORE SPORT</span>
             </div>
 
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>防守與接發球 (Dig & Receive)</span>
-                <span style="color: #0284c7;">88%</span>
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>極限貼地魚躍救球 (Savage Dig)</span>
+                <span class="skill-percent-neon">90%</span>
               </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 88%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>團隊跑位與互相掩護 (Team Tactics)</span>
-                <span style="color: #0284c7;">85%</span>
-              </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 85%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 90%;"></div>
               </div>
             </div>
 
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>發球穩定度 (Serve)</span>
-                <span style="color: #0284c7;">80%</span>
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>撕裂攔網重扣 (Thunder Spike)</span>
+                <span class="skill-percent-neon">85%</span>
               </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 80%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 85%;"></div>
               </div>
             </div>
 
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>扣殺與變線進攻 (Spike)</span>
-                <span style="color: #0284c7;">78%</span>
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>狂野跳發破壞力 (Aggressive Serve)</span>
+                <span class="skill-percent-neon">82%</span>
               </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 78%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>狼群戰術跑位掩護 (Wolfpack Tactics)</span>
+                <span class="skill-percent-neon">88%</span>
+              </div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 88%;"></div>
               </div>
             </div>
           </div>
 
-          <!-- 綜合軟實力卡片 -->
-          <div class="skill-cute-card reveal reveal-delay-1">
-            <div class="skill-top-bar">
+          <!-- 狂暴精神力與綜合硬底子 -->
+          <div class="skill-savage-box reveal reveal-delay-1">
+            <div class="skill-header-row">
               <div class="skill-title-group">
-                <span style="font-size: 2.2rem;">🌟</span>
+                <span style="font-size: 2.2rem;">⚡</span>
                 <div>
-                  <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">綜合心態與實力</h3>
-                  <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">動靜兼修的硬底子</span>
+                  <h3 style="font-size: 1.35rem; font-family: 'Orbitron', sans-serif; font-weight: 900; color: #ffffff;">狂徒心態與殺傷力</h3>
+                  <span style="font-size: 0.85rem; color: var(--neon-cyan); font-weight: 700;">不可動搖的霸道意志</span>
                 </div>
               </div>
-              <span class="skill-badge-soft">強韌內在</span>
+              <span class="skill-badge-rebel">WAR ATTRIBUTES</span>
             </div>
 
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>千片拼圖鍛造的耐心定力</span>
-                <span style="color: #0284c7;">98%</span>
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>千片拼圖鍛造的鋼鐵耐性</span>
+                <span class="skill-percent-neon">99%</span>
               </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 98%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>哈哈哈開朗抗壓精神</span>
-                <span style="color: #0284c7;">95%</span>
-              </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 95%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 99%;"></div>
               </div>
             </div>
 
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>遊戲策略與手眼協調</span>
-                <span style="color: #0284c7;">88%</span>
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>逆境大笑抗壓狂暴值</span>
+                <span class="skill-percent-neon">96%</span>
               </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 88%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 96%;"></div>
               </div>
             </div>
 
-            <div class="skill-bar-unit">
-              <div class="skill-info-row">
-                <span>新事物快速上手能力</span>
-                <span style="color: #0284c7;">90%</span>
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>狂暴遊戲微操與手速反射</span>
+                <span class="skill-percent-neon">92%</span>
               </div>
-              <div class="cute-progress-bar">
-                <div class="cute-progress-inner"
-                  style="width: 90%; background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-row-unit">
+              <div class="skill-label-row">
+                <span>極速撕裂未知戰場本能</span>
+                <span class="skill-percent-neon">94%</span>
+              </div>
+              <div class="laser-progress-bar">
+                <div class="laser-progress-inner" style="width: 94%;"></div>
               </div>
             </div>
           </div>
@@ -1519,50 +1651,50 @@
     </section>
 
     <!-- ==========================================================
-         生活愛好：打球 ＆ 玩遊戲 (Hobbies)
+         廝殺領域：打球 ＆ 遊戲狂潮 (Warzone & Arena)
          ========================================================== -->
     <section class="section-hobbies" id="hobbies">
       <div class="container">
 
         <div class="section-header reveal">
-          <div class="cute-pill-tag">HOBBIES & PASSIONS</div>
-          <h2 class="section-title">我的兩大愛好：<span class="blue">打球 ＆ 玩遊戲</span></h2>
-          <p class="section-subtitle">球場上的流汗熱血，遊戲世界的策略解謎，構成最充實的日常！</p>
+          <div class="rebel-badge">SAVAGE DOMAINS</div>
+          <h2 class="section-title">狂熱戰場：<span class="neon-glow">球場廝殺 ＆ 遊戲屠戮</span></h2>
+          <p class="section-subtitle">汗水狂噴的球場硬仗，熱血沸騰的電競開黑，凡有勝負之處，皆是我揚名立萬的主場！</p>
         </div>
 
         <div class="hobbies-dual-grid">
 
-          <!-- 愛好 1: 打球 -->
-          <div class="hobby-card-cute reveal">
-            <div class="hobby-watermark-icon">🏐</div>
-            <div class="box-icon-bubble bubble-blue">🏐</div>
-            <h3 class="box-title">愛好之一：熱血打球</h3>
-            <p class="box-desc">
-              運動能讓整個人的精神煥發！除了最愛的排球之外，籃球、羽球也都很喜歡。享受大家全神貫注追著一顆球、得分時並肩擊掌的純粹快樂！
+          <!-- 戰場 1: 熱血打球 -->
+          <div class="hobby-warzone-card reveal">
+            <div class="hobby-shadow-icon">🏐</div>
+            <div class="savage-icon-box">🏐</div>
+            <h3 class="savage-card-title">狂熱戰場一：球場暴走廝殺</h3>
+            <p class="savage-card-desc">
+              不流乾最後一滴汗就不下場！除了最狂熱的排球之外，籃球、羽球照樣全速衝刺。享受全場狂奔、極限救球後狠狠扣死對手的暴爽快感！
             </p>
-            <div class="cute-tag-cloud">
-              <span class="hobby-chip">🏐 排球連擊</span>
-              <span class="hobby-chip">🏀 球場奔馳</span>
-              <span class="hobby-chip">🔥 爆發力訓練</span>
-              <span class="hobby-chip">🤝 團隊默契</span>
-              <span class="hobby-chip">🏃 揮汗解壓</span>
+            <div class="cyber-chip-cloud">
+              <span class="cyber-chip">⚡ 暴扣釘地板</span>
+              <span class="cyber-chip">🔥 撕裂引力救球</span>
+              <span class="cyber-chip">🐺 狼群默契連擊</span>
+              <span class="cyber-chip">💥 荷爾蒙狂飆</span>
+              <span class="cyber-chip">🤝 撞胸慶祝</span>
             </div>
           </div>
 
-          <!-- 愛好 2: 玩遊戲 -->
-          <div class="hobby-card-cute reveal reveal-delay-1">
-            <div class="hobby-watermark-icon">🎮</div>
-            <div class="box-icon-bubble bubble-blue">🎮</div>
-            <h3 class="box-title">愛好之二：沉浸玩遊戲</h3>
-            <p class="box-desc">
-              不管是策略破關、多人組隊還是解謎挑戰，遊戲是激發想像力與鍛鍊即時反應的好夥伴。和朋友線上開黑語音連線，歡樂翻倍！
+          <!-- 戰場 2: 沉浸遊戲 -->
+          <div class="hobby-warzone-card reveal reveal-delay-1">
+            <div class="hobby-shadow-icon">🎮</div>
+            <div class="savage-icon-box">🎮</div>
+            <h3 class="savage-card-title">狂熱戰場二：電競戰局支配</h3>
+            <p class="savage-card-desc">
+              開大招就是要敢莽到底！不管是策略破局、多人黑隊廝殺還是極限解謎，語音狂呼開黑組隊，戰術壓制全圖，帶領隊友殺穿敵陣！
             </p>
-            <div class="cute-tag-cloud">
-              <span class="hobby-chip">🎯 戰術制定</span>
-              <span class="hobby-chip">⚡ 敏捷反應</span>
-              <span class="hobby-chip">🧩 邏輯推理</span>
-              <span class="hobby-chip">🎤 語音開黑組隊</span>
-              <span class="hobby-chip">🎉 享受破關快感</span>
+            <div class="cyber-chip-cloud">
+              <span class="cyber-chip">🎯 戰術極限開大</span>
+              <span class="cyber-chip">⚡ 毫秒神級反射</span>
+              <span class="cyber-chip">💀 語音狂野開黑</span>
+              <span class="cyber-chip">👑 通關鎖定勝局</span>
+              <span class="cyber-chip">🎉 狂暴五殺收割</span>
             </div>
           </div>
 
@@ -1572,30 +1704,30 @@
     </section>
 
     <!-- ==========================================================
-         趣味「哈哈哈」正能量補充站 (Cute Interactive Generator)
+         狂傲能量戰吼控制台 (Savage Roar Command Station)
          ========================================================== -->
     <section class="section-interactive" id="interactive">
       <div class="container">
 
-        <div class="interactive-white-card reveal">
-          <div class="cute-pill-tag">FUN INTERACTION</div>
-          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-main); margin-bottom: 0.6rem;">
-            「哈哈哈」正能量補充站
+        <div class="roar-command-console reveal">
+          <div class="rebel-badge">MAXIMUM ADRENALINE</div>
+          <h2 style="font-family: 'Orbitron', 'Noto Sans TC', sans-serif; font-size: 2.6rem; font-weight: 900; color: #ffffff; margin-bottom: 0.8rem; text-transform: uppercase;">
+            「哈哈哈哈！」狂傲戰吼發射台
           </h2>
-          <p style="color: var(--text-sub); max-width: 520px; margin: 0 auto; font-size: 1.05rem;">
-            今天覺得累了嗎？按一下按鈕，解鎖 Vincent 專屬的活力語錄，把微笑傳遞給你！
+          <p style="color: var(--text-steel); max-width: 600px; margin: 0 auto; font-size: 1.15rem; font-weight: 600;">
+            能量見底了嗎？猛按發射鈕，引爆 Vincent 的狂人戰吼，把不服輸的狂暴熱血灌進你的靈魂！
           </p>
 
-          <div class="quote-display-bubble" id="quoteBubble">
-            「哈哈哈！只要球還沒落地，比賽就還沒結束！」
+          <div class="roar-display-screen" id="quoteBubble">
+            「哈哈哈哈！天生狂徒，老子這輩子就沒在怕輸！」
           </div>
 
-          <button class="btn-laugh-energy" id="laughBtn">
-            ✨ 按一下收集「哈哈哈」笑聲！
+          <button class="btn-fire-roar" id="laughBtn">
+            ⚡ 轟出「哈哈哈哈」狂傲戰吼！
           </button>
 
-          <div class="laugh-count-text" id="laughCounter">
-            已送出歡樂笑聲：<strong style="color: #0284c7; font-size: 1.15rem;">0</strong> 次 🎈
+          <div class="roar-counter-text" id="laughCounter">
+            已引爆狂野戰吼：<strong style="color: var(--neon-cyan); font-size: 1.5rem; text-shadow: 0 0 15px var(--neon-cyan);">0</strong> 次 🔥
           </div>
         </div>
 
@@ -1603,24 +1735,24 @@
     </section>
 
     <!-- ==========================================================
-         聯絡我 Contact Section
+         下戰帖 Contact Section (下戰帖)
          ========================================================== -->
     <section class="section-contact" id="contact">
       <div class="container">
 
-        <div class="contact-cute-box reveal">
-          <span style="font-size: 3.2rem; display: block; margin-bottom: 0.8rem;">👋</span>
-          <h2 class="contact-title">想約打球、組隊打遊戲，<br>或聊聊拼圖技巧嗎？</h2>
-          <p style="color: var(--text-sub); font-size: 1.05rem; max-width: 480px; margin: 0 auto;">
-            很高興遇見你！歡迎隨時打聲招呼，一起用「哈哈哈」的好心情面對每一天！
+        <div class="contact-cyber-box reveal">
+          <span style="font-size: 3.5rem; display: block; margin-bottom: 1rem; filter: drop-shadow(0 0 20px var(--neon-cyan));">⚡</span>
+          <h2 class="contact-war-title">想約球場硬碰硬？<br>還是開黑殺穿全場？</h2>
+          <p style="color: var(--text-steel); font-size: 1.15rem; max-width: 540px; margin: 0 auto; line-height: 1.8;">
+            隨時給 Vincent 下戰帖！不管是打球、玩遊戲還是切磋千片拼圖，一起狂妄大笑闖江湖！
           </p>
 
           <div class="contact-buttons-row">
-            <button class="btn-cute-primary" onclick="copyEmail('vincent@example.com', this)">
-              <span>💌</span> 複製我的信箱
+            <button class="btn-wild-primary" onclick="copyEmail('vincent@example.com', this)">
+              <span>💌</span> 複製戰術信箱
             </button>
-            <a href="#hero" class="btn-cute-secondary">
-              <span>🚀</span> 滑回頁首重看
+            <a href="#hero" class="btn-wild-secondary">
+              <span>🚀</span> 飛回主戰場
             </a>
           </div>
         </div>
@@ -1629,24 +1761,24 @@
     </section>
   </main>
 
-  <!-- 頁尾 Footer -->
+  <!-- 狂野暗黑頁尾 -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 劉恒淯 (Vincent). All rights reserved.</p>
-      <p style="font-size: 0.84rem; color: var(--text-muted); margin-top: 0.3rem;">
-        設計風格：純白簡約可愛 ｜ 主色：清新蔚藍搭配純白 ｜ 核心信念：哈哈哈
+      <p>© 2026 劉恒淯 (Vincent). ALL RIGHTS RESERVED. // UNRULY REBEL DESIGN</p>
+      <p style="font-size: 0.86rem; color: var(--text-dim); margin-top: 0.4rem; letter-spacing: 0.1em;">
+        風格：狂野放蕩不羈 ｜ 主色：深藍＋純黑極限電光 ｜ 核心信條：哈哈哈哈
       </p>
-      <div class="back-top-cute" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        ↑ 咻一下滑回頂部
+      <div class="back-top-rebel" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑ 咻一下狂飆回頂端
       </div>
     </div>
   </footer>
 
   <!-- ==========================================================
-       原生 JAVASCRIPT：捲動淡入、手機選單與互動彩蛋
+       原生 JAVASCRIPT：戰術捲動、選單與狂暴彩蛋
        ========================================================== -->
   <script>
-    // 1. 捲動淡入動畫 (IntersectionObserver)
+    // 1. 捲動淡入動態偵測 (IntersectionObserver)
     document.addEventListener('DOMContentLoaded', () => {
       const reveals = document.querySelectorAll('.reveal');
 
@@ -1658,14 +1790,14 @@
           }
         });
       }, {
-        threshold: 0.12,
-        rootMargin: '0px 0px -30px 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
       });
 
       reveals.forEach(el => observer.observe(el));
     });
 
-    // 2. 手機版漢堡導覽選單
+    // 2. 手機版戰術目錄切換
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navLinks = document.getElementById('navLinks');
 
@@ -1674,7 +1806,6 @@
       mobileMenuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
     });
 
-    // 點擊任何導覽連結時關閉選單
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -1682,16 +1813,16 @@
       });
     });
 
-    // 3. 「哈哈哈」能量語錄隨機生成
-    const energyQuotes = [
-      "「哈哈哈！只要球還沒落地，比賽就還沒結束！」",
-      "「1000片拼圖都能拼完，這世上還有什麼難得倒我？哈哈哈！」",
-      "「排球場上失分不用怕，喊一聲哈哈哈，下顆球直接接起來！」",
-      "「玩遊戲就是要敢開大招，生活也是！保持開朗，天下無敵！」",
-      "「哈哈哈！保持笑容，好運和好球都會自動被你吸引過來！」",
-      "「每一片拼圖都有它的專屬位置，你也一樣獨一無二！」",
-      "「人生就像一場排球賽，沒有完美的個人，只有互相托起的團隊！」",
-      "「哈哈哈！遇到難題先深呼吸笑三個字，心情好解法就來了！」"
+    // 3. 「哈哈哈哈」狂傲戰吼語錄隨機生成
+    const rageQuotes = [
+      "「哈哈哈哈！天生狂徒，老子這輩子就沒在怕輸！」",
+      "「1000 片拼圖都被踩在腳下了，這世界還有什麼配當我的對手？哈哈哈哈！」",
+      "「排球快落地？飛身撲下去撕裂引力！站起來大笑一聲，下分照樣拿！」",
+      "「常規是給弱者守的，開大招直接碾過去！哈哈哈哈！」",
+      "「老子一笑，生死難料！滿血復活，再戰十輪！」",
+      "「逆境？那只是老子狂傲劇本裡最刺激的開場白！哈哈哈哈！」",
+      "「球場上沒人能定我的罪，球不落地，狂傲不死！」",
+      "「哈哈哈哈！遇到難關不用慌，大笑三聲直接正面硬剛撕開它！」"
     ];
 
     let count = 0;
@@ -1701,35 +1832,37 @@
 
     laughBtn.addEventListener('click', () => {
       count++;
-      const randomQuote = energyQuotes[Math.floor(Math.random() * energyQuotes.length)];
+      const randomQuote = rageQuotes[Math.floor(Math.random() * rageQuotes.length)];
 
-      // 縮放微動畫
+      // 震撼縮放微動畫
       quoteBubble.style.opacity = '0';
-      quoteBubble.style.transform = 'scale(0.95)';
+      quoteBubble.style.transform = 'scale(0.92) rotate(-1deg)';
 
       setTimeout(() => {
         quoteBubble.textContent = randomQuote;
         quoteBubble.style.opacity = '1';
-        quoteBubble.style.transform = 'scale(1)';
-      }, 180);
+        quoteBubble.style.transform = 'scale(1) rotate(0deg)';
+      }, 150);
 
-      laughCounter.innerHTML = `已送出歡樂笑聲：<strong style="color: #0284c7; font-size: 1.15rem;">${count}</strong> 次 🎉`;
+      laughCounter.innerHTML = `已引爆狂野戰吼：<strong style="color: var(--neon-cyan); font-size: 1.5rem; text-shadow: 0 0 15px var(--neon-cyan);">${count}</strong> 次 🔥`;
     });
 
-    // 4. 複製信箱小功能
+    // 4. 複製信箱戰術回饋
     function copyEmail(email, btn) {
       if (navigator.clipboard) {
         navigator.clipboard.writeText(email).then(() => {
           const originalContent = btn.innerHTML;
-          btn.innerHTML = "<span>✓</span> 已複製信箱！";
-          btn.style.background = "linear-gradient(135deg, #10b981 0%, #059669 100%)";
+          btn.innerHTML = "<span>✓</span> 戰術信箱已複製！";
+          btn.style.background = "linear-gradient(135deg, #00ff88 0%, #00f0ff 100%)";
+          btn.style.color = "#000000";
           setTimeout(() => {
             btn.innerHTML = originalContent;
             btn.style.background = "";
+            btn.style.color = "";
           }, 2200);
         });
       } else {
-        alert("聯絡信箱：" + email);
+        alert("戰術信箱：" + email);
       }
     }
   </script>
